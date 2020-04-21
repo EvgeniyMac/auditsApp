@@ -86,7 +86,8 @@ class SegmentedHeaderView: UIView {
         control.selectionIndicatorLocation = .down
         control.selectionIndicatorColor = AppStyle.Color.main
 
-        control.titleTextAttributes = AppStyle.Text.segmentDefault
+        // Evgeniy 1
+        control.titleTextAttributes = AppStyle.Text.segmentDetailDefault
         control.selectedTitleTextAttributes = AppStyle.Text.segmentSelected
     }
 

@@ -69,6 +69,7 @@ class TabNavigationController: UINavigationController {
         self.navigationItem.hidesBackButton = true
 
         let label = UILabel(frame: .zero)
+        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: label)
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: String(),
                                                                 style: .plain,

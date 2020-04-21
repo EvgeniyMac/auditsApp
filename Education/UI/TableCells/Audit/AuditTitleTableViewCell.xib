@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,13 +16,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAu-K5-uni">
-                        <rect key="frame" x="20" y="15" width="374" height="20.5"/>
+                        <rect key="frame" x="20" y="0.0" width="374" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="200" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJU-lM-Zg0">
-                        <rect key="frame" x="20" y="45.5" width="374" height="48.5"/>
+                        <rect key="frame" x="20" y="30.5" width="374" height="63.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -31,7 +31,7 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="MAu-K5-uni" secondAttribute="trailing" constant="20" id="Vmv-1c-CpW"/>
                     <constraint firstAttribute="bottom" secondItem="XJU-lM-Zg0" secondAttribute="bottom" constant="15" id="WAp-SM-bcs"/>
-                    <constraint firstItem="MAu-K5-uni" firstAttribute="top" secondItem="R6c-7c-mpK" secondAttribute="top" constant="15" id="eKH-Ze-Jkc"/>
+                    <constraint firstItem="MAu-K5-uni" firstAttribute="top" secondItem="R6c-7c-mpK" secondAttribute="top" id="eKH-Ze-Jkc"/>
                     <constraint firstItem="XJU-lM-Zg0" firstAttribute="top" secondItem="MAu-K5-uni" secondAttribute="bottom" constant="10" id="kBY-fF-Ir8"/>
                     <constraint firstItem="XJU-lM-Zg0" firstAttribute="leading" secondItem="R6c-7c-mpK" secondAttribute="leading" constant="20" id="oer-5K-Bpo"/>
                     <constraint firstAttribute="trailing" secondItem="XJU-lM-Zg0" secondAttribute="trailing" constant="20" id="swV-OR-5O8"/>

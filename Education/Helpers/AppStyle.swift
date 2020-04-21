@@ -50,6 +50,14 @@ class AppStyle {
                                              underlined: false,
                                              alignment: .center)
         }
+        
+        // Evgeniy 1
+        static var segmentDetailDefault: [NSAttributedString.Key: Any] {
+            return AppStyle.stringAttributes(font: AppStyle.Font.medium(18),
+                                             color: AppStyle.Color.textDetailDeselected,
+                                             underlined: false,
+                                             alignment: .center)
+        }
 
         static var segmentSelected: [NSAttributedString.Key: Any] {
             return AppStyle.stringAttributes(font: AppStyle.Font.medium(18),
@@ -74,7 +82,7 @@ class AppStyle {
     }
 
     struct Color {
-        // Main colors
+        // Main
         static let green = custom(hex: 0x22A45D)
         static let blue = custom(hex: 0x266C92)
         static let orange = custom(hex: 0xE89539)
@@ -114,7 +122,8 @@ class AppStyle {
         static let textDisabled = AppStyle.Color.gray
         static let textSelected = AppStyle.Color.custom(hex: 0x1C1C1C)
         static let textDeselected = AppStyle.Color.custom(hex: 0xC4C4C4)
-
+        static let textDetailDeselected = AppStyle.Color.custom(hex: 0x757575)
+        
         // Buttons colors
         static let buttonMain = AppStyle.Color.green
         static let buttonSecondary = AppStyle.Color.black
@@ -237,6 +246,14 @@ class AppStyle {
     }
 
     struct NavigationBar {
+        static let buttonSize = CGSize(width: 32, height: 32)
+        static let layoutMargins = UIEdgeInsets(top: 0,
+                                                left: 20,
+                                                bottom: 0,
+                                                right: 8)
+    }
+    
+    struct NavigationBarDetail {
         static let buttonSize = CGSize(width: 32, height: 32)
         static let layoutMargins = UIEdgeInsets(top: 0,
                                                 left: 20,

@@ -41,6 +41,7 @@ class TextCollectionViewCell: UICollectionViewCell {
         self.contentView.backgroundColor = UIColor.clear
 
         self.container.layer.cornerRadius = AppStyle.CornerRadius.textCell
+        self.container.backgroundColor = .red
         self.container.layer.masksToBounds = true
 
         self.textLabel.textColor = AppStyle.Color.darkGray

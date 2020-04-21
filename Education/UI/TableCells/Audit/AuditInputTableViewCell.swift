@@ -24,8 +24,10 @@ class AuditInputTableViewCell: UITableViewCell {
 
         self.textView.backgroundColor = UIColor.clear
         self.textView.text = nil
+        // Evgeniy 2
         self.textView.placeholder = Localization.string("audit.details.input.placeholder")
-        self.textView.placeholderColor = AppStyle.Color.darkGray.withAlphaComponent(0.87)
+        self.textView.placeholderColor = AppStyle.Color.darkGray
+        
         self.textView.minHeight = 25
         self.textView.maxHeight = 60
 

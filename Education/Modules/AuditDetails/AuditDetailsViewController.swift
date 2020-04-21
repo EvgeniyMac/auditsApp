@@ -75,6 +75,7 @@ class AuditDetailsViewController: BaseViewController, KeyboardObserver {
 
         setupSegmentedHeaderView(header: self.segmentedHeader)
         setupHeaderTitle(text: self.viewModel.audit?.name)
+
         self.tableView.reloadData()
     }
 
@@ -82,6 +83,7 @@ class AuditDetailsViewController: BaseViewController, KeyboardObserver {
         self.performSegue(withIdentifier: "toProfile", sender: nil)
     }
 
+    
     override func configureNavigationBar() {
         super.configureNavigationBar()
 
@@ -189,7 +191,7 @@ class AuditDetailsViewController: BaseViewController, KeyboardObserver {
         self.viewModel = AuditDetailsViewModel(audit: newAudit)
         self.viewModel.resetDataForCurrentTab()
         self.title = newAudit.name
-
+       
         if self.isViewLoaded {
             self.tableView.reloadData()
         }
@@ -260,9 +262,9 @@ class AuditDetailsViewController: BaseViewController, KeyboardObserver {
         }
 
         self.reworkButton.setTitle(Localization.string("audit.details.action.rework"), for: .normal)
-        self.reworkButton.backgroundColor = AppStyle.Color.auditRework
+        self.reworkButton.backgroundColor = .red
         self.rejectButton.setTitle(Localization.string("audit.details.action.reject"), for: .normal)
-        self.rejectButton.backgroundColor = AppStyle.Color.auditReject
+        self.rejectButton.backgroundColor = .red
         [self.acceptButton, self.reworkButton, self.reworkButton]
             .compactMap({ $0 }).forEach { (button) in
                 AppStyle.setupShadow(forContainer: button)

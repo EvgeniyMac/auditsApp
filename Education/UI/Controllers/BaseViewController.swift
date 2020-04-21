@@ -103,7 +103,7 @@ class BaseViewController: UIViewController {
 
     open func configureBackButton() {
         //configuring back button
-        let finishItem = UIBarButtonItem(image: UIImage(named: "back_small_icon"),
+        let finishItem = UIBarButtonItem(image: UIImage(named: "arrow_back"),
                                          style: .done,
                                          target: self,
                                          action: #selector(didPressBackButton(sender:)))

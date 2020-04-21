@@ -106,10 +106,11 @@ extension AuditOptionsTableViewCell: UICollectionViewDataSource, UICollectionVie
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: TextCollectionViewCell = collectionView.dequeCell(at: indexPath)
 
+        // Evgeniy 3 (yes, no button)
         let tagItem = self.options[indexPath.row]
         cell.textLabel.text = tagItem.answer
         cell.textLabel.font = AppStyle.Font.regular(14)
-        cell.textLabel.textColor = AppStyle.Color.darkGray
+        cell.textLabel.textColor = AppStyle.Color.textSelected.withAlphaComponent(0.87)
         cell.textLabel.textAlignment = .center
 
         cell.container.layer.cornerRadius = AppStyle.CornerRadius.tag
