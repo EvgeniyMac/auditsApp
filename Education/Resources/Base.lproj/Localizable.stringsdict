@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>plurable.reviews_count.VP</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@reviews@</string>
+		<key>reviews</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>0 reviews</string>
+			<key>one</key>
+			<string>1 review</string>
+			<key>two</key>
+			<string>2 reviews</string>
+			<key>few</key>
+			<string>%d reviews</string>
+			<key>many</key>
+			<string>%d reviews</string>
+			<key>other</key>
+			<string>%d reviews</string>
+		</dict>
+	</dict>
+	<key>plurable.days_left_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@days_left@</string>
+		<key>days_left</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>less than a day</string>
+			<key>one</key>
+			<string>1 day</string>
+			<key>two</key>
+			<string>2 days</string>
+			<key>few</key>
+			<string>%d days</string>
+			<key>many</key>
+			<string>%d days</string>
+			<key>other</key>
+			<string>%d days</string>
+		</dict>
+	</dict>
+	<key>plurable.weeks_left_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@weeks_left@</string>
+		<key>weeks_left</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>less than a week</string>
+			<key>one</key>
+			<string>1 week</string>
+			<key>two</key>
+			<string>2 weeks</string>
+			<key>few</key>
+			<string>%d weeks</string>
+			<key>many</key>
+			<string>%d weeks</string>
+			<key>other</key>
+			<string>%d weeks</string>
+		</dict>
+	</dict>
+	<key>plurable.questions.IP</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@questions@</string>
+		<key>questions</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>0 questions</string>
+			<key>one</key>
+			<string>1 question</string>
+			<key>two</key>
+			<string>2 questions</string>
+			<key>few</key>
+			<string>%d questions</string>
+			<key>many</key>
+			<string>%d questions</string>
+			<key>other</key>
+			<string>%d questions</string>
+		</dict>
+	</dict>
+	<key>plurable.minutes.VP</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@minutes@</string>
+		<key>minutes</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>0 minutes</string>
+			<key>one</key>
+			<string>1 minute</string>
+			<key>two</key>
+			<string>2 minutes</string>
+			<key>few</key>
+			<string>%d minutes</string>
+			<key>many</key>
+			<string>%d minutes</string>
+			<key>other</key>
+			<string>%d minutes</string>
+		</dict>
+	</dict>
+	<key>plurable.seconds.VP</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@seconds@</string>
+		<key>seconds</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>0 seconds</string>
+			<key>one</key>
+			<string>1 second</string>
+			<key>two</key>
+			<string>2 seconds</string>
+			<key>few</key>
+			<string>%d seconds</string>
+			<key>many</key>
+			<string>%d seconds</string>
+			<key>other</key>
+			<string>%d seconds</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

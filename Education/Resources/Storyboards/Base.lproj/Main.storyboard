@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewControllerID" id="BYZ-38-t0r" customClass="SplashViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AbN-c4-Zhp"/>
+                    <connections>
+                        <segue destination="wGQ-aR-ZSf" kind="presentation" identifier="toAuth" id="1gT-WS-vGg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="72"/>
+        </scene>
+        <!--Walkthrough View Controller-->
+        <scene sceneID="jXW-pF-CvW">
+            <objects>
+                <viewController storyboardIdentifier="WalkthroughViewControllerID" id="1RW-pH-PxY" customClass="WalkthroughViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7k-RZ-Xef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602" y="72"/>
+        </scene>
+        <!--Auth-->
+        <scene sceneID="201-ze-uun">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AuthID" storyboardName="Auth" id="wGQ-aR-ZSf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKZ-o9-jsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="532"/>
+        </scene>
+        <!--Main Navigation Controller-->
+        <scene sceneID="RJF-Mt-7Cb">
+            <objects>
+                <navigationController id="k9V-FP-CTX" customClass="MainNavigationController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZiQ-Sh-YCp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="G0r-oF-M3D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NWK-KV-qNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="72"/>
+        </scene>
+    </scenes>
+</document>

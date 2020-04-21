@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpChatViewController" customModule="_skills" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="q2n-HE-G2Q" id="Aar-Kz-qKv"/>
+                <outlet property="view" destination="CvF-Ok-Zco" id="3an-ti-ap0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CvF-Ok-Zco">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2n-HE-G2Q">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="q2n-HE-G2Q" firstAttribute="top" secondItem="GyL-Y0-SnZ" secondAttribute="top" id="Mgc-4W-2R1"/>
+                <constraint firstAttribute="trailing" secondItem="q2n-HE-G2Q" secondAttribute="trailing" id="id4-0T-U95"/>
+                <constraint firstItem="q2n-HE-G2Q" firstAttribute="leading" secondItem="CvF-Ok-Zco" secondAttribute="leading" id="jua-Yx-Ltd"/>
+                <constraint firstItem="GyL-Y0-SnZ" firstAttribute="bottom" secondItem="q2n-HE-G2Q" secondAttribute="bottom" id="xSZ-yp-YKI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="GyL-Y0-SnZ"/>
+            <point key="canvasLocation" x="100" y="103"/>
+        </view>
+    </objects>
+</document>

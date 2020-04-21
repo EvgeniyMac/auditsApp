@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yDe-kZ-XSB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Navigation Controller-->
+        <scene sceneID="EAt-eS-c3b">
+            <objects>
+                <navigationController id="yDe-kZ-XSB" customClass="TabNavigationController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qm2-JB-waT" customClass="CustomNavigationBar" customModule="_skills" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nOp-yP-9vy" kind="relationship" relationship="rootViewController" id="kC4-RD-JNo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nfn-tJ-CPo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="108"/>
+        </scene>
+        <!--Дела-->
+        <scene sceneID="Ijm-MU-JP7">
+            <objects>
+                <viewController id="nOp-yP-9vy" customClass="ToDoViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Дела" image="tab.todo.deselected" selectedImage="tab.todo.selected" id="j7x-65-OZ9">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="aCq-d0-XlZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="l5l-Ij-7xh" kind="show" identifier="toProfile" id="Xat-te-cnE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rd-Jg-DtX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="108"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="1aD-Gt-03m">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="l5l-Ij-7xh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zHr-1C-Tkz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5Q-pZ-f4E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="599"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab.todo.deselected" width="34" height="34"/>
+        <image name="tab.todo.selected" width="34" height="34"/>
+    </resources>
+</document>

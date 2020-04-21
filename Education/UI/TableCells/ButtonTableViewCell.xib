@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="133" id="h6A-ET-9iw" customClass="ButtonTableViewCell" customModule="Education" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h6A-ET-9iw" id="qGh-uZ-whQ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="132.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1F-uj-EPV" customClass="CustomButton" customModule="Education" customModuleProvider="target">
+                        <rect key="frame" x="20" y="51.5" width="335" height="30"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y1F-uj-EPV" firstAttribute="leading" secondItem="qGh-uZ-whQ" secondAttribute="leading" constant="20" id="EMk-6T-Scd"/>
+                    <constraint firstItem="y1F-uj-EPV" firstAttribute="centerY" secondItem="qGh-uZ-whQ" secondAttribute="centerY" id="My0-CC-b5u"/>
+                    <constraint firstItem="y1F-uj-EPV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qGh-uZ-whQ" secondAttribute="top" constant="12" id="cDp-vE-CEW"/>
+                    <constraint firstItem="y1F-uj-EPV" firstAttribute="centerX" secondItem="qGh-uZ-whQ" secondAttribute="centerX" id="y4W-TO-hMA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="y1F-uj-EPV" id="fSA-Cq-Yei"/>
+            </connections>
+            <point key="canvasLocation" x="80.799999999999997" y="89.505247376311857"/>
+        </tableViewCell>
+    </objects>
+</document>

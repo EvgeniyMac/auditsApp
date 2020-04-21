@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9M8-Oh-ffv">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="rsj-iP-wpw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="GJa-GA-9FC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKc-W4-cbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="798"/>
+        </scene>
+        <!--Courses List View Controller-->
+        <scene sceneID="5Rg-4l-Pjo">
+            <objects>
+                <viewController id="98h-q4-P5w" customClass="CoursesListViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="g1j-MQ-RkD" kind="show" identifier="toCourseInfoViewController" id="3Hs-4J-onb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AcV-5l-sgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500" y="798"/>
+        </scene>
+        <!--Courses Market View Controller-->
+        <scene sceneID="JKt-vz-UU4">
+            <objects>
+                <viewController id="eTb-qG-Giu" customClass="CoursesMarketViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab.library.deselected" selectedImage="tab.library.selected" id="ewU-Yf-VPe">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="fNF-x7-u0A"/>
+                    <connections>
+                        <segue destination="g1j-MQ-RkD" kind="show" identifier="toCourseInfoViewController" id="4tD-4W-s40"/>
+                        <segue destination="9bb-1g-tNM" kind="show" identifier="toProfile" id="oON-iq-QgK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aj9-Xt-xut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537" y="-711"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="3m4-QL-Atp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="9bb-1g-tNM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6CZ-fq-pKI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzC-u5-YMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2183" y="-712"/>
+        </scene>
+        <!--Tab Navigation Controller-->
+        <scene sceneID="k4Q-S3-veC">
+            <objects>
+                <navigationController storyboardIdentifier="TabMarketID" id="4Ap-RJ-Pbl" customClass="TabNavigationController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SHq-2K-dP9" customClass="CustomNavigationBar" customModule="_skills" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eTb-qG-Giu" kind="relationship" relationship="rootViewController" id="QCB-BH-ddW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGD-pv-EXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="-1478"/>
+        </scene>
+        <!--Education Tab Bar Controller-->
+        <scene sceneID="ziV-0F-i6V">
+            <objects>
+                <tabBarController id="2ft-9y-1td" customClass="EducationTabBarController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="seV-J7-4Oq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="21C-TI-Ejz" kind="relationship" relationship="viewControllers" id="jOl-Bb-xQt"/>
+                        <segue destination="eTb-qG-Giu" kind="relationship" relationship="viewControllers" id="ZwR-La-eLt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5R-eo-Qr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="-711"/>
+        </scene>
+        <!--Tab Navigation Controller-->
+        <scene sceneID="UtT-pI-UTo">
+            <objects>
+                <navigationController id="9M8-Oh-ffv" customClass="TabNavigationController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KMi-se-VW9" customClass="CustomNavigationBar" customModule="_skills" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="21C-TI-Ejz" kind="relationship" relationship="rootViewController" id="Hcw-cd-Yc1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4a-6Z-HaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="234"/>
+        </scene>
+        <!--Education View Controller-->
+        <scene sceneID="oqC-ND-2Ty">
+            <objects>
+                <viewController storyboardIdentifier="EducationViewControllerID" id="21C-TI-Ejz" customClass="EducationViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab.education.deselected" selectedImage="tab.education.selected" id="smo-4I-pWT">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="OSC-wC-2xS"/>
+                    <connections>
+                        <segue destination="g1j-MQ-RkD" kind="show" identifier="toCourseInfoViewController" id="frz-tB-vyN"/>
+                        <segue destination="GJa-GA-9FC" kind="show" identifier="toProfile" id="NaX-Mk-Tyb"/>
+                        <segue destination="98h-q4-P5w" kind="show" identifier="toCoursesListViewController" id="YMJ-8v-LeT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R78-cR-soc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="235"/>
+        </scene>
+        <!--Course Info View Controller-->
+        <scene sceneID="93i-CF-E2X">
+            <objects>
+                <viewController storyboardIdentifier="CourseInfoViewControllerID" id="g1j-MQ-RkD" customClass="CourseInfoViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9VX-hH-Sd9"/>
+                    <connections>
+                        <segue destination="Wr6-IF-dRS" kind="show" identifier="toMaterialViewController" id="3jw-jk-6VT"/>
+                        <segue destination="2RC-L4-UtR" kind="show" identifier="toQuestionViewController" id="6De-9G-00W"/>
+                        <segue destination="TEB-Tf-qRK" kind="show" identifier="toResultViewController" id="gs6-fq-Fxh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLP-JJ-iPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="tAr-Eh-pP7" customClass="CourseInfoInitializer" customModule="_skills" customModuleProvider="target">
+                    <connections>
+                        <outlet property="courseInfoViewController" destination="g1j-MQ-RkD" id="QVg-BI-eZa"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="2377" y="72"/>
+        </scene>
+        <!--Material View Controller-->
+        <scene sceneID="gYk-iC-PIf">
+            <objects>
+                <viewController id="Wr6-IF-dRS" customClass="MaterialViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EAM-Ev-ybN"/>
+                    <connections>
+                        <segue destination="2RC-L4-UtR" kind="show" identifier="toQuestionViewController" id="A1f-Lr-ykQ"/>
+                        <segue destination="TEB-Tf-qRK" kind="show" identifier="toResultViewController" id="ia0-rM-6Zh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjD-Kv-KJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="jMs-Ph-QST" customClass="MaterialInitializer" customModule="_skills" customModuleProvider="target">
+                    <connections>
+                        <outlet property="materialViewController" destination="Wr6-IF-dRS" id="wQ2-Gh-hIl"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="3220" y="-734"/>
+        </scene>
+        <!--Question View Controller-->
+        <scene sceneID="M33-6I-7EK">
+            <objects>
+                <viewController storyboardIdentifier="QuestionViewControllerID" id="2RC-L4-UtR" customClass="QuestionViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7UG-KZ-Yyf"/>
+                    <connections>
+                        <segue destination="TEB-Tf-qRK" kind="show" identifier="toResultViewController" id="cN1-Q4-b7a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSG-CC-YKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="2ZY-2f-CJK" customClass="QuestionInitializer" customModule="_skills" customModuleProvider="target">
+                    <connections>
+                        <outlet property="questionViewController" destination="2RC-L4-UtR" id="pmK-VJ-8XN"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="4903" y="72"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Zca-0k-KD1">
+            <objects>
+                <viewController id="TEB-Tf-qRK" customClass="ResultViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Cos-Xb-CLc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qje-0b-HgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="FBS-cn-cf8" customClass="ResultInitializer" customModule="_skills" customModuleProvider="target">
+                    <connections>
+                        <outlet property="resultViewController" destination="TEB-Tf-qRK" id="CBi-1w-w3s"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="4028" y="903"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab.education.deselected" width="34" height="34"/>
+        <image name="tab.education.selected" width="34" height="34"/>
+        <image name="tab.library.deselected" width="34" height="34"/>
+        <image name="tab.library.selected" width="34" height="34"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gs6-fq-Fxh"/>
+        <segue reference="6De-9G-00W"/>
+        <segue reference="4tD-4W-s40"/>
+        <segue reference="Hcw-cd-Yc1"/>
+        <segue reference="QCB-BH-ddW"/>
+    </inferredMetricsTieBreakers>
+</document>

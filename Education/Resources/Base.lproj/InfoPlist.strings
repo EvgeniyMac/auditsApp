@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Education
+
+  Created by Andrey Medvedev on 16/04/2019.
+  Copyright © 2019 ООО Офис 365. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "7skills";
+"NSPhotoLibraryUsageDescription" = "Разрешение требуется для того, чтобы была возможность отправить фото";

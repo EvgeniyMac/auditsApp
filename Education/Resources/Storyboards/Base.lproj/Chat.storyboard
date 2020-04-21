@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="thL-ya-EEl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Navigation Controller-->
+        <scene sceneID="3aE-gF-Y99">
+            <objects>
+                <navigationController id="thL-ya-EEl" customClass="TabNavigationController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G82-qH-WKH" customClass="CustomNavigationBar" customModule="_skills" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="l87-8Q-cOu" kind="relationship" relationship="rootViewController" id="doA-dZ-Whr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9P-VG-TE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-629" y="74"/>
+        </scene>
+        <!--News List View Controller-->
+        <scene sceneID="DQa-DH-9Xe">
+            <objects>
+                <viewController id="f1E-S5-CpM" customClass="NewsListViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lXd-CL-FWQ"/>
+                    <connections>
+                        <segue destination="1bx-2g-bvy" kind="show" identifier="toNewsItemViewController" id="2Uv-qH-9fw"/>
+                        <segue destination="HAH-Ey-EDT" kind="show" identifier="toProfile" id="GL1-dl-jVo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qjl-JI-oVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="74"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sdC-RG-1Wz">
+            <objects>
+                <navigationController id="sJL-MP-cmo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b11-wB-svN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d02-Ic-ZtB" kind="relationship" relationship="rootViewController" id="nhC-oz-gLX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMa-g6-hRN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="-609"/>
+        </scene>
+        <!--Help Chat View Controller-->
+        <scene sceneID="CYW-dy-8rD">
+            <objects>
+                <viewController id="d02-Ic-ZtB" customClass="HelpChatViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Nco-8C-e4V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9d-lM-wDN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2391" y="-609"/>
+        </scene>
+        <!--Общение-->
+        <scene sceneID="Rif-SW-oqT">
+            <objects>
+                <viewController id="l87-8Q-cOu" customClass="CommunicationViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Общение" image="tab.chat.deselected" selectedImage="tab.chat.selected" id="Dg2-Ux-tZs">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="qq3-JE-qkk"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="1bx-2g-bvy" kind="show" identifier="toNewsItemViewController" id="1i3-j5-fUC"/>
+                        <segue destination="ggE-mV-P7s" kind="show" identifier="toProfile" id="Zrb-Ug-qk6"/>
+                        <segue destination="f1E-S5-CpM" kind="show" identifier="toNewsListViewController" id="OpN-fO-TPv"/>
+                        <segue destination="sJL-MP-cmo" kind="presentation" identifier="toHelpChatViewController" modalPresentationStyle="fullScreen" id="Wkz-nS-Ljg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0M0-hN-kdA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="74"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="hzM-0x-jJB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="ggE-mV-P7s" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zQr-3m-BJv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BYj-KY-haD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="578"/>
+        </scene>
+        <!--News Item View Controller-->
+        <scene sceneID="CXP-JW-iRb">
+            <objects>
+                <viewController restorationIdentifier="NewsItemViewControllerID" storyboardIdentifier="NewsItemViewControllerID" id="1bx-2g-bvy" customClass="NewsItemViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="z7I-Bg-l3p"/>
+                    <connections>
+                        <segue destination="HAH-Ey-EDT" kind="show" identifier="toProfile" id="QLG-Tr-MOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awb-P2-A4b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="842"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="aq1-mM-7gD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="HAH-Ey-EDT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ofc-DO-jel"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cg8-Fy-16A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1970" y="550"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab.chat.deselected" width="34" height="34"/>
+        <image name="tab.chat.selected" width="34" height="34"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="QLG-Tr-MOe"/>
+        <segue reference="1i3-j5-fUC"/>
+    </inferredMetricsTieBreakers>
+</document>

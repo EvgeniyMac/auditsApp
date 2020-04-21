@@ -1,0 +1,328 @@
+/* 
+  Localizable.strings
+  Education
+
+  Created by Andrey Medvedev on 15/03/2019.
+  Copyright © 2019 ООО Офис 365. All rights reserved.
+*/
+
+// Code request:
+"code_request.info_title" = "7skills";
+"code_request.info_subtitle" = "Enter the app using your phone and an SMS-confirmation";
+"code_request.phone_number" = "Phone number";
+"code_request.navigation_bar_title" = "Enter phone number";
+"code_request.phone_number_hint" = "Enter phone number";
+"code_request.proceed_button_title" = "Proceed";
+"code_request.terms_text_terms_intro" = "By pressing Confirm button I accept ";
+"code_request.terms_text_terms" = "terms of use";
+"code_request.terms_text_gdpr_intro" = " and give access for ";
+"code_request.terms_text_gdpr" = "processing personal data";
+
+// Code confirm:
+"code_confirm.info_title" = "One more step";
+"code_confirm.info_subtitle" = "Confirm your phone number using SMS";
+"code_confirm.navigation_bar_title" = "Enter code";
+"code_confirm.phone_number_unavailable" = "Phone number is not entered";
+"code_confirm.verification_id_unavailable" = "VerificationID unavailable";
+"code_confirm.info_label_format" = "We've sent SMS with a code to %@";
+"code_confirm.code_textfield_placeholder" = "Code";
+"code_confirm.confirm_button_title" = "Confirm";
+"code_confirm.resend_intro" = "Didn't get the code?  ";
+"code_confirm.resend_action_title" = "Resend again";
+
+"education.navigation_bar_title" = "Education";
+"education.tab_bar_title" = "Education";
+"education.group_action" = "All";
+"education.group_recommended" = "Recommended";
+"education.group_my" = "My";
+"education.group_library" = "Library";
+
+"courses_list.navigation_bar_title" = "Education";
+"courses_list.tab_bar_title" = "Education";
+"courses_list.my_orders" = "My orders";
+"courses_list.completed_orders" = "Completed";
+
+"courses_compilation.title_random" = "Users also watch";
+"courses_compilation.title_recommended" = "Recommended courses";
+
+"course_info.title" = "Education";
+"course_info.content" = "Content";
+"course_info.about_course" = "About course";
+"course_info.about_certification" = "About exam";
+"course_info.about_test" = "About test";
+"course_info.about.title.rewards" = "Rewards";
+"course_info.about.title.about_course" = "About course";
+"course_info.about.title.about_exam" = "About exam";
+"course_info.about.title.about_test" = "About test";
+"course_info.reviews" = "Reviews";
+"course_info.start_button" = "Start";
+"course_info.continue_button" = "Continue";
+"course_info.retry_button" = "Retry";
+"course_info.default_button" = "course_info.default_button";// for a case with an unknown state
+"course_info.tags.title" = "Tags";
+"course_info.course.again_button" = "Pass again";
+"course_info.exam.again_button" = "Pass again";
+"course_info.exam.button" = "Exam";
+
+"course.course.state.new" = "New";
+"course.course.state.watched" = "Watched";
+"course.course.state.proceed" = "Proceed";
+"course.course.state.passed" = "Passed";
+"course.course.state.failed" = "Not passed";// neutral text for failed
+"course.course.state.overdue" = "Not passed";
+"course.course.state.overdue_passed" = "Not passed";
+"course.course.state.overdue_failed" = "Not passed";
+"course.exam.state.new" = "New";
+"course.exam.state.watched" = "Watched";
+"course.exam.state.retry" = "Retry";
+"course.exam.state.proceed" = "Proceed";
+"course.exam.state.passed" = "Passed";
+"course.exam.state.failed" = "Not passed";// neutral text for failed
+"course.exam.state.overdue" = "Not passed";
+"course.exam.state.overdue_passed" = "Not passed";
+"course.exam.state.overdue_failed" = "Not passed";
+"course.course_title" = "Course";
+"course.certification_title" = "Exam";
+"course.price.free" = "Free";
+
+// course_stats.status_reason
+"course_stats.status_reason.time_over" = "Time is over";
+"course_stats.status_reason.attempts_ended" = "Attempts ended";
+
+// course.course_type
+"course.course_type.certification" = "Exam";
+"course.course_type.course" = "Course";
+"course.course_type.test" = "Test";
+"course.course_passed" = "Course passed";
+"course.course_failed" = "Course not passed";
+"course.certification_passed" = "Exam passed";
+"course.certification_failed" = "Exam not passed";
+"course.test_passed" = "Test passed";
+"course.test_failed" = "Test not passed";
+"course.test_questions_format" = "%@ in %@";
+"course.test_allowed_errors" = "Allowed errors";
+"course.number_of_attempts" = "Number of attempts";
+"course.one_attempt" = "One attempt";
+"course.users_passed" = "Passed";
+
+"material.title_test" = "Test";
+"material.title_lesson" = "Lesson";
+"material.test_start_button" = "Start test";
+"material.test_questions_format" = "%@ in %@";
+"material.lesson_finished_button" = "Studied";
+
+"question.question_number_hint" = "Enter number";
+"question.question_exact_match_hint" = "Enter a correct answer";
+"question.question_one_correct_hint" = "Select a correct answer";
+"question.question_some_correct_hint" = "Select all correct answers";
+"question.question_sequence_hint" = "Make sequence";
+"question.question_conformity_hint" = "Find conformity";
+"question.answer_button" = "Proceed";//"Answer";
+"question.next_question_button" = "Proceed";//"Next question";
+"question.question_explanation" = "Proceed";//"Explanation";
+"question.finish_button" = "Finish";
+"question.answer_correct" = "Correct answer";
+"question.answer_incorrect" = "Incorrect answer";
+"question.answer_yes" = "Yes";
+"question.answer_no" = "No";
+"question.passed" = "Passed";
+"question.question_title" = "Question";
+"question.text_input.placeholder" = "Your answer";
+
+"answer_bool_cell.false_button" = "False";
+"answer_bool_cell.true_button" = "True";
+
+"result.questions_section_title" = "Questions";
+"result.test_passed_title" = "Test passed";
+"result.test_failed_title" = "Test not passed";
+"result.test_passed_subtitle" = "Well done, don't stop";
+"result.test_failed_subtitle" = "Prepare and try again, you'll make it";
+"result.button_retry_title" = "Retry";
+"result.button_proceed_title" = "Close";
+"result.exam.correct.title" = "Exam was passed!";
+"result.exam.correct.subtitle" = "Well done, don't stop";
+"result.exam.incorrect.title" = "Not enough just a bit";
+"result.exam.incorrect.subtitle" = "Prepare and try again, you'll make it";
+"result.test.correct.title" = "Test was passed!";
+"result.test.correct.subtitle" = "Well done, don't stop";
+"result.test.incorrect.title" = "Not enough just a bit";
+"result.test.incorrect.subtitle" = "Prepare and try again, you'll make it";
+"result.course.correct.title" = "Course was passed!";
+"result.course.correct.subtitle" = "Well done, don't stop";
+"result.course.incorrect.title" = "Not enough just a bit";
+"result.course.incorrect.subtitle" = "Prepare and try again, you'll make it";
+"result.correct.title" = "Correct answers";
+"result.time.title" = "Passing time";
+"result.attempts.title" = "Attempts number";
+"result.attempts_remaining.title" = "Attempts remaining";
+"result.rating.title" = "Rating position";
+"result.all_answers.title" = "All answers";
+"result.my_mistakes.title" = "My mistakes";
+
+// Audits list
+"audits_list.date.default" = "Today";
+"audits_list.city.default" = "Izhevsk";
+"audits_list.users.default" = "Users";
+"audits_list.status.default" = "Statuses";
+
+// Audit
+"audit.navigation_bar_title" = "Проверки";
+"audit.tab_bar_title" = "Audit";
+"audit.status.new" = "New";
+"audit.status.pass" = "To pass";
+"audit.status.watched" = "Watched";
+"audit.status.check" = "To check";
+"audit.status.on_check" = "On check";
+"audit.status.modify" = "To modify";
+"audit.status.on_modify" = "On modify";
+"audit.status.accepted" = "Accepted";
+"audit.status.accepted_commented" = "Accepted";
+"audit.status.failed_time_out" = "Failed";
+"audit.status.failed_commented" = "Failed";
+"audit.status.not_defined" = "Not defined";
+
+// Audit details
+"audit.details.tab.list" = "List";
+"audit.details.tab.photo" = "Photo";
+"audit.details.tab.result" = "Result";
+"audit.details.input.placeholder" = "Comment";
+"audit.details.option.group" = "Group by sections";
+"audit.details.option.hide_received" = "Hide received";
+"audit.details.action.send" = "Send";
+"audit.details.action.accept" = "Accept";
+"audit.details.action.rework" = "Rework";
+"audit.details.action.reject" = "Reject";
+"audit.details.enter_comment" = "Enter comment";
+
+// Chat
+"chat.tab_bar_title" = "Chat";
+"communication.header.title" = "Chat";
+"communication.header.subtitle" = "Do you have questions? We are always ready to help.";
+"communication.header.action" = "All";
+"communication.news_title" = "News";
+"communication.news_action" = "All";
+"communication.no_news.title" = "News";
+"communication.no_news.subtitle" = "There's no news at the moment";
+
+// Help chat
+"help_chat.support.title" = "Ask a question";
+"help_chat.idea.title" = "Offer an idea";
+"help_chat.claim.title" = "Send a claim";
+"help_chat.boss_help.title" = "Boss help";
+
+// Communication
+"communication.navigation_bar_title" = "Communication";
+"news.navigation_bar_title" = "News";
+
+// Library
+"library.navigation_bar_title" = "Library";
+"library.tab_bar_title" = "Library";
+
+// ToDo
+"todo.navigation_bar_title" = "To Do";
+"todo.tab_bar_title" = "To Do";
+
+// Profile
+"profile.navigation_bar_title" = "Profile";
+"profile.language" = "Language";
+"profile.logout" = "Logout";
+"languages.navigation_bar_title" = "Language";
+
+// Preferences
+"prefs.completed" = "Completed";
+"prefs.new" = "New";
+"prefs.favorites" = "Favorites";
+"prefs.expiring" = "Expiring";
+"prefs.started" = "Started";
+"prefs.cancel" = "Cancel";
+
+// Walkthrough
+"walkthrough.button_start.title" = "Start";
+"walkthrough.button_proceed.title" = "Proceed";
+"walkthrough.7skills.title" = "7skills";
+"walkthrough.7skills.subtitle" = "Educate, make audits, organize business";
+"walkthrough.chat.title" = "Chat";
+"walkthrough.chat.subtitle" = "Educate, make audits, organize business";
+"walkthrough.library.title" = "Library";
+"walkthrough.library.subtitle" = "Educate, make audits, organize business";
+"walkthrough.audit.title" = "Audits";
+"walkthrough.audit.subtitle" = "Educate, make audits, organize business";
+"walkthrough.education.title" = "Education";
+"walkthrough.education.subtitle" = "Educate, make audits, organize business";
+"walkthrough.todo.title" = "ToDo";
+"walkthrough.todo.subtitle" = "Educate, make audits, organize business";
+
+// Common
+"common.hours_short" = "h.";
+"common.minutes_short" = "min.";
+"common.preposition_time" = "at";
+"common.preposition_at_division" = "at";
+"common.preposition_today_at" = "today at";
+"common.preposition_of" = "of";
+"common.tomorrow" = "tomorrow";
+"common.logout.request" = "Are you sure you want to logout?";
+"common.logout" = "Logout";
+"common.cancel" = "Cancel";
+"common.ok" = "OK";
+"common.warning" = "Warning";
+"common.error" = "Error";
+"common.congratulations" = "Congratulations!";
+"common.server_url_change_title" = "Server URL";
+"common.under_construction" = "Under construction";
+"common.action.close" = "Close";
+"common.move.back" = "Back";
+"common.move.next" = "Next";
+
+"congratulations.course_passed_format" = "Course «%@» was passed successfully.";
+"congratulations.course_passed_text" = "Course was passed successfully.";
+"congratulations.certification_passed_format" = "Exam «%@» was passed successfully.";
+"congratulations.certification_passed_text" = "Exam was passed successfully.";
+"congratulations.test_passed_format" = "Test «%@» was passed successfully.";
+"congratulations.test_passed_text" = "Test was passed successfully.";
+"congratulations.to_courses" = "Return to my courses";
+
+// Error screen:
+"error.no_connection.title" = "No connection";
+"error.no_connection.message" = "Check Internet connection and retry";
+"error.no_connection.action" = "Retry";
+"error.server_error.title" = "Server error";
+"error.server_error.message" = "Please wait a few minutes and try again";
+"error.server_error.action" = "Retry";
+"error.user_blocked.title" = "Access restricted";
+"error.user_blocked.message" = "Please contact administration";
+"error.user_blocked.action" = "Retry";
+"error.no_content.title" = "No content";
+"error.no_content.message" = "Content was not added yet. Please move to the other section";
+
+// Alerts:
+"alert.test_interrupt.text" = "All progress would be erased, an attempt would be wasted. Are you sure you want to interrupt the test?";
+"alert.test_interrupt.action" = "Interrupt";
+
+// Complexity:
+"complexity.simple" = "Simple";
+"complexity.difficult" = "Middle";
+"complexity.pro" = "Hard";
+
+// Rewards:
+"reward.at_time.title" = "At a time";
+"reward.first.title" = "First";
+"reward.no_mistakes.title" = "No mistakes";
+
+// Languages:
+"language.title.ru" = "Русский";
+"language.title.en" = "English";
+
+// Errors:
+"error.question_input_empty" = "Please enter an answer before moving forward";
+"error.request_data_insufficient" = "Unable to make request with insufficient data";
+"error.networking" = "Networking error";
+"error.incorrect_response" = "Incorrect response from server";
+"error.no_data" = "No data found";
+"error.no_internet_connection" = "Please check Internet connection";
+"error.item_not_found" = "The material doesn't exist or was deleted";
+"error.user_blocked" = "Access restricted";
+"error.unauthorized" = "Unauthorized request";
+"error.deprecated_version" = "Current version of the app is deprecated. Please update the app";
+"error.incorrect_input_data" = "Incorrect input data. Please correct and try again";
+"error.incorrect_server_url" = "Incorrect server URL";
+"error.auth_failed" = "Incorrect input data. Check it and try again.";

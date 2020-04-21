@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="m9h-N5-Dcc" customClass="ConformityOptionView" customModule="Education" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPY-Gl-O7Y">
+                    <rect key="frame" x="18" y="4" width="30" height="86"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXV-0I-nkt" customClass="BorderedButton" customModule="Education" customModuleProvider="target">
+                    <rect key="frame" x="18" y="4" width="30" height="86"/>
+                    <connections>
+                        <action selector="didPressOptionButton:" destination="m9h-N5-Dcc" eventType="touchUpInside" id="vGA-V0-sXU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lvd-QE-gH5" firstAttribute="bottom" secondItem="OPY-Gl-O7Y" secondAttribute="bottom" constant="4" id="IRy-ZL-G0o"/>
+                <constraint firstItem="yXV-0I-nkt" firstAttribute="leading" secondItem="OPY-Gl-O7Y" secondAttribute="leading" id="OOh-dg-hEd"/>
+                <constraint firstItem="yXV-0I-nkt" firstAttribute="trailing" secondItem="OPY-Gl-O7Y" secondAttribute="trailing" id="XIn-eW-LPQ"/>
+                <constraint firstItem="lvd-QE-gH5" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OPY-Gl-O7Y" secondAttribute="trailing" constant="18" id="ZZa-8C-Meh"/>
+                <constraint firstItem="OPY-Gl-O7Y" firstAttribute="leading" secondItem="lvd-QE-gH5" secondAttribute="leading" constant="18" id="coX-YY-onZ"/>
+                <constraint firstItem="yXV-0I-nkt" firstAttribute="bottom" secondItem="OPY-Gl-O7Y" secondAttribute="bottom" id="cyL-Sc-Brm"/>
+                <constraint firstItem="yXV-0I-nkt" firstAttribute="top" secondItem="OPY-Gl-O7Y" secondAttribute="top" id="iSV-fR-cGY"/>
+                <constraint firstItem="OPY-Gl-O7Y" firstAttribute="top" secondItem="lvd-QE-gH5" secondAttribute="top" constant="4" id="yiu-Nb-4Cg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="lvd-QE-gH5"/>
+            <connections>
+                <outlet property="optionButton" destination="yXV-0I-nkt" id="J92-nf-8ra"/>
+                <outlet property="optionLabel" destination="OPY-Gl-O7Y" id="K9D-nl-36F"/>
+            </connections>
+            <point key="canvasLocation" x="64.799999999999997" y="141.22938530734635"/>
+        </view>
+    </objects>
+</document>

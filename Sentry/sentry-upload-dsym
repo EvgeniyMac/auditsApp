@@ -1,0 +1,4 @@
+export SENTRY_URL=https://sentry.7skills.com/ 
+
+sentry-cli --log-level=debug --auth-token 6d88f46927964129bdf4c60eda7607790ed23341da94400ab60baacd10cd4fa1 upload-dif --org 4de872926ce841a595e91813f0d683a6 --project 11 dSYMs/
+

@@ -1,0 +1,328 @@
+/* 
+  Localizable.strings
+  Education
+
+  Created by Andrey Medvedev on 15/03/2019.
+  Copyright © 2019 ООО Офис 365. All rights reserved.
+*/
+
+// Code request:
+"code_request.info_title" = "7skills";
+"code_request.info_subtitle" = "Войдите в приложение с помощью телефона и подтверждения через СМС";
+"code_request.phone_number" = "Номер телефона";
+"code_request.navigation_bar_title" = "Введите телефон";
+"code_request.phone_number_hint" = "Введите номер телефона";
+"code_request.proceed_button_title" = "Продолжить";
+"code_request.terms_text_terms_intro" = "Нажимая кнопку подтвердить я принимаю ";
+"code_request.terms_text_terms" = "пользовательское соглашение";
+"code_request.terms_text_gdpr_intro" = " и даю согласие на ";
+"code_request.terms_text_gdpr" = "обработку персональных данных";
+
+// Code confirm:
+"code_confirm.info_title" = "Осталось чуть-чуть";
+"code_confirm.info_subtitle" = "Подтвердите телефон с помощью СМС";
+"code_confirm.navigation_bar_title" = "Введите код";
+"code_confirm.phone_number_unavailable" = "Номер телефона не указан";
+"code_confirm.verification_id_unavailable" = "VerificationID недоступен";
+"code_confirm.info_label_format" = "Мы отправили SMS с кодом проверки на Ваш телефон %@";
+"code_confirm.code_textfield_placeholder" = "Код";
+"code_confirm.confirm_button_title" = "Подтвердить";
+"code_confirm.resend_intro" = "Не пришел код?  ";
+"code_confirm.resend_action_title" = "Отправить снова";
+
+"education.navigation_bar_title" = "Обучение";
+"education.tab_bar_title" = "Обучение";
+"education.group_action" = "Все";
+"education.group_recommended" = "Рекомендуемое";
+"education.group_my" = "Мои";
+"education.group_library" = "Библиотека";
+
+"courses_list.navigation_bar_title" = "Обучение";
+"courses_list.tab_bar_title" = "Обучение";
+"courses_list.my_orders" = "Мои задания";
+"courses_list.completed_orders" = "Завершённые";
+
+"courses_compilation.title_random" = "Пользователи также смотрят";
+"courses_compilation.title_recommended" = "Рекомендуемые курсы";
+
+"course_info.title" = "Обучение";
+"course_info.content" = "Содержание";
+"course_info.about_course" = "О курсе";
+"course_info.about_certification" = "Об экзамене";
+"course_info.about_test" = "О тесте";
+"course_info.about.title.rewards" = "Награды";
+"course_info.about.title.about_course" = "О чем курс";
+"course_info.about.title.about_exam" = "О чем экзамен";
+"course_info.about.title.about_test" = "О чем тест";
+"course_info.reviews" = "Отзывы";
+"course_info.start_button" = "Начать";
+"course_info.continue_button" = "Продолжить";
+"course_info.retry_button" = "Пересдать";
+"course_info.default_button" = "course_info.default_button";// for a case with an unknown state
+"course_info.tags.title" = "Рубрики";
+"course_info.course.again_button" = "Пройти ещё раз";
+"course_info.exam.again_button" = "Сдать ещё раз";
+"course_info.exam.button" = "Экзамен";
+
+"course.course.state.new" = "Новый";
+"course.course.state.watched" = "Просмотрено";
+"course.course.state.proceed" = "Продолжить";
+"course.course.state.passed" = "Пройден";
+"course.course.state.failed" = "Не пройден";// neutral text for failed
+"course.course.state.overdue" = "Не пройден";
+"course.course.state.overdue_passed" = "Не пройден";
+"course.course.state.overdue_failed" = "Не пройден";
+"course.exam.state.new" = "Новый";
+"course.exam.state.watched" = "Просмотрено";
+"course.exam.state.retry" = "Пересдать";
+"course.exam.state.proceed" = "Продолжить";
+"course.exam.state.passed" = "Сдан";
+"course.exam.state.failed" = "Не сдан";// neutral text for failed
+"course.exam.state.overdue" = "Не сдан";
+"course.exam.state.overdue_passed" = "Не сдан";
+"course.exam.state.overdue_failed" = "Не сдан";
+"course.course_title" = "Курс";
+"course.certification_title" = "Экзамен";
+"course.price.free" = "Бесплатно";
+
+// course_stats.status_reason
+"course_stats.status_reason.time_over" = "Кончилось время";
+"course_stats.status_reason.attempts_ended" = "Кончились попытки";
+
+// course.course_type
+"course.course_type.certification" = "Экзамен";
+"course.course_type.course" = "Курс";
+"course.course_type.test" = "Тест";
+"course.course_passed" = "Курс пройден";
+"course.course_failed" = "Курс не пройден";
+"course.certification_passed" = "Экзамен пройден";
+"course.certification_failed" = "Экзамен не пройден";
+"course.test_passed" = "Тест пройден";
+"course.test_failed" = "Тест не пройден";
+"course.test_questions_format" = "%@ за %@";
+"course.test_allowed_errors" = "Допустимое количество ошибок";
+"course.number_of_attempts" = "Число попыток";
+"course.one_attempt" = "Одна попытка";
+"course.users_passed" = "Прошли";
+
+"material.title_test" = "Проверка знаний";
+"material.title_lesson" = "Урок";
+"material.test_start_button" = "Начать тест";
+"material.test_questions_format" = "%@ за %@";
+"material.lesson_finished_button" = "Изучено";
+
+"question.question_number_hint" = "Введите число";
+"question.question_exact_match_hint" = "Напишите правильный ответ";
+"question.question_one_correct_hint" = "Выберите правильный ответ";
+"question.question_some_correct_hint" = "Выберите все правильные ответы";
+"question.question_sequence_hint" = "Составьте последовательность";
+"question.question_conformity_hint" = "Найдите соответствия";
+"question.answer_button" = "Дальше";//"Ответить";
+"question.next_question_button" = "Дальше";//"Следующий вопрос";
+"question.question_explanation" = "Дальше";//"Объяснение";
+"question.finish_button" = "Завершить";
+"question.answer_correct" = "Верный ответ";
+"question.answer_incorrect" = "Неверный ответ";
+"question.answer_yes" = "Да";
+"question.answer_no" = "Нет";
+"question.passed" = "Пройдено";
+"question.question_title" = "Вопрос";
+"question.text_input.placeholder" = "Ваш ответ";
+
+"answer_bool_cell.false_button" = "Не верно";
+"answer_bool_cell.true_button" = "Верно";
+
+"result.questions_section_title" = "Вопросы";
+"result.test_passed_title" = "Тест пройден";
+"result.test_failed_title" = "Тест не пройден";
+"result.test_passed_subtitle" = "Так держать, не останавливайтесь на достигнутом";
+"result.test_failed_subtitle" = "Подготовьтесь и попробуйте еще раз, у вас обязательно получится";
+"result.button_retry_title" = "Пересдать";
+"result.button_proceed_title" = "Закрыть";
+"result.exam.correct.title" = "Экзамен сдан!";
+"result.exam.correct.subtitle" = "Так держать, не останавливайтесь на достигнутом";
+"result.exam.incorrect.title" = "Не хватило чуть-чуть";
+"result.exam.incorrect.subtitle" = "Подготовьтесь и попробуйте еще раз, у вас обязательно получится";
+"result.test.correct.title" = "Тест сдан!";
+"result.test.correct.subtitle" = "Так держать, не останавливайтесь на достигнутом";
+"result.test.incorrect.title" = "Не хватило чуть-чуть";
+"result.test.incorrect.subtitle" = "Подготовьтесь и попробуйте еще раз, у вас обязательно получится";
+"result.course.correct.title" = "Курс пройден!";
+"result.course.correct.subtitle" = "Так держать, не останавливайтесь на достигнутом";
+"result.course.incorrect.title" = "Не хватило чуть-чуть";
+"result.course.incorrect.subtitle" = "Подготовьтесь и попробуйте еще раз, у вас обязательно получится";
+"result.correct.title" = "Правильных ответов";
+"result.time.title" = "Время прохождения";
+"result.attempts.title" = "Количество попыток";
+"result.attempts_remaining.title" = "Осталось попыток";
+"result.rating.title" = "Место в рейтинге";
+"result.all_answers.title" = "Все ответы";
+"result.my_mistakes.title" = "Мои ошибки";
+
+// Audits list
+"audits_list.date.default" = "Сегодня";
+"audits_list.city.default" = "Ижевск";
+"audits_list.users.default" = "Пользователи";
+"audits_list.status.default" = "Статусы";
+
+// Audit
+"audit.navigation_bar_title" = "Проверки";
+"audit.tab_bar_title" = "Проверки";
+"audit.status.new" = "Новая";
+"audit.status.pass" = "Пройти";
+"audit.status.watched" = "Просмотрена";
+"audit.status.check" = "Проверить";
+"audit.status.on_check" = "На проверке";
+"audit.status.modify" = "Доработать";
+"audit.status.on_modify" = "На доработке";
+"audit.status.accepted" = "Принята";
+"audit.status.accepted_commented" = "Принята";
+"audit.status.failed_time_out" = "Провалена";
+"audit.status.failed_commented" = "Провалена";
+"audit.status.not_defined" = "Не определена";
+
+// Audit details
+"audit.details.tab.list" = "Список";
+"audit.details.tab.photo" = "Фото";
+"audit.details.tab.result" = "Результат";
+"audit.details.input.placeholder" = "Комментарий";
+"audit.details.option.group" = "Сгруппировать по разделам";
+"audit.details.option.hide_received" = "Скрыть принятые";
+"audit.details.action.send" = "Отправить";
+"audit.details.action.accept" = "Принять";
+"audit.details.action.rework" = "Доработать";
+"audit.details.action.reject" = "Провалить";
+"audit.details.enter_comment" = "Введите комментарий";
+
+// Chat
+"chat.tab_bar_title" = "Общение";
+"communication.header.title" = "Чат";
+"communication.header.subtitle" = "У вас возникли вопросы? Мы всегда готовы помочь и проконсультировать.";
+"communication.header.action" = "Все";
+"communication.news_title" = "Новости";
+"communication.news_action" = "Все";
+"communication.no_news.title" = "Новости";
+"communication.no_news.subtitle" = "Сегодня новостей нет.";
+
+// Help chat
+"help_chat.support.title" = "Задать вопрос";
+"help_chat.idea.title" = "Предложить идею";
+"help_chat.claim.title" = "Отправить претензию";
+"help_chat.boss_help.title" = "Помощь босса";
+
+// Communication
+"communication.navigation_bar_title" = "Общение";
+"news.navigation_bar_title" = "Новости";
+
+// Library
+"library.navigation_bar_title" = "Библиотека";
+"library.tab_bar_title" = "Библиотека";
+
+// ToDo
+"todo.navigation_bar_title" = "Дела";
+"todo.tab_bar_title" = "Дела";
+
+// Profile
+"profile.navigation_bar_title" = "Профиль";
+"profile.language" = "Язык";
+"profile.logout" = "Выход";
+"languages.navigation_bar_title" = "Язык";
+
+// Preferences
+"prefs.completed" = "Выполненные";
+"prefs.new" = "Новые";
+"prefs.favorites" = "Избранные";
+"prefs.expiring" = "Скоро завершатся";
+"prefs.started" = "Начатые";
+"prefs.cancel" = "Отмена";
+
+// Walkthrough
+"walkthrough.button_start.title" = "Начать";
+"walkthrough.button_proceed.title" = "Продолжить";
+"walkthrough.7skills.title" = "7skills";
+"walkthrough.7skills.subtitle" = "Обучайтесь, устраивайте проверки, организуйте дела";
+"walkthrough.chat.title" = "Общение";
+"walkthrough.chat.subtitle" = "Обучайтесь, устраивайте проверки, организуйте дела";
+"walkthrough.library.title" = "Библиотека";
+"walkthrough.library.subtitle" = "Обучайтесь, устраивайте проверки, организуйте дела";
+"walkthrough.audit.title" = "Проверки";
+"walkthrough.audit.subtitle" = "Обучайтесь, устраивайте проверки, организуйте дела";
+"walkthrough.education.title" = "Обучение";
+"walkthrough.education.subtitle" = "Обучайтесь, устраивайте проверки, организуйте дела";
+"walkthrough.todo.title" = "Дела";
+"walkthrough.todo.subtitle" = "Обучайтесь, устраивайте проверки, организуйте дела";
+
+// Common
+"common.hours_short" = "ч.";
+"common.minutes_short" = "мин.";
+"common.preposition_time" = "в";
+"common.preposition_at_division" = "в";
+"common.preposition_today_at" = "сегодня в";
+"common.preposition_of" = "из";
+"common.tomorrow" = "завтра";
+"common.logout.request" = "Вы уверены, что хотите выйти из аккаунта?";
+"common.logout" = "Выйти";
+"common.cancel" = "Отмена";
+"common.ok" = "ОК";
+"common.warning" = "Внимание";
+"common.error" = "Ошибка";
+"common.congratulations" = "Поздравляем!";
+"common.server_url_change_title" = "URL сервера";
+"common.under_construction" = "В разработке";
+"common.action.close" = "Закрыть";
+"common.move.back" = "Назад";
+"common.move.next" = "Далее";
+
+"congratulations.course_passed_format" = "Курс «%@» успешно пройден.";
+"congratulations.course_passed_text" = "Курс успешно пройден.";
+"congratulations.certification_passed_format" = "Экзамен «%@» успешно пройден.";
+"congratulations.certification_passed_text" = "Экзамен успешно пройден.";
+"congratulations.test_passed_format" = "Тест «%@» успешно пройден.";
+"congratulations.test_passed_text" = "Тест успешно пройден.";
+"congratulations.to_courses" = "Вернуться к моим заданиям";
+
+// Error screen:
+"error.no_connection.title" = "Нет интернета";
+"error.no_connection.message" = "Проверьте интернет-соединение и повторите попытку";
+"error.no_connection.action" = "Повторить попытку";
+"error.server_error.title" = "Ошибка сервера";
+"error.server_error.message" = "Пожалуйста, подождите пару минут и повторите попытку";
+"error.server_error.action" = "Повторить попытку";
+"error.user_blocked.title" = "Доступ ограничен";
+"error.user_blocked.message" = "Пожалуйста, обратитесь к администрации";
+"error.user_blocked.action" = "Повторить попытку";
+"error.no_content.title" = "Нет контента";
+"error.no_content.message" = "Контент еще не добавлен. Попробуйте перейти в другой раздел";
+
+// Alerts:
+"alert.test_interrupt.text" = "Прогресс будет сброшен, а попытка будет потрачена. Вы уверены, что хотите прервать тест?";
+"alert.test_interrupt.action" = "Прервать";
+
+// Complexity:
+"complexity.simple" = "Простой";
+"complexity.difficult" = "Средний";
+"complexity.pro" = "Сложный";
+
+// Rewards:
+"reward.at_time.title" = "Вовремя";
+"reward.first.title" = "Первый";
+"reward.no_mistakes.title" = "Без ошибок";
+
+// Languages:
+"language.title.ru" = "Русский";
+"language.title.en" = "English";
+
+// Errors:
+"error.question_input_empty" = "Пожалуйста, ответьте на вопрос, прежде чем переходить дальше";
+"error.request_data_insufficient" = "Невозможно выполнить запорс из-за недостаточности данных";
+"error.networking" = "Ошибка сети";
+"error.incorrect_response" = "Некорректный ответ сервера";
+"error.no_data" = "Данных не обнаружено";
+"error.no_internet_connection" = "Пожалуйста, проверьте соединение с сетью";
+"error.item_not_found" = "Материал не существует или был удален";
+"error.user_blocked" = "Доступ ограничен";
+"error.unauthorized" = "Неавторизованный запрос";
+"error.deprecated_version" = "Текущая версия приложения устарела. Пожалуйста, обновите приложение";
+"error.incorrect_input_data" = "Введены некорректные данные. Исправьте и попробуйте еще раз";
+"error.incorrect_server_url" = "Некорректный URL сервера";
+"error.auth_failed" = "Введены некорректные данные. Исправьте и попробуйте еще раз.";

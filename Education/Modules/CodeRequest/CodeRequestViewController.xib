@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CodeRequestViewController" customModule="Education" customModuleProvider="target">
+            <connections>
+                <outlet property="flagButtonRus" destination="nDg-Y3-Sal" id="F7Q-na-LMt"/>
+                <outlet property="flagButtonUsa" destination="hhl-Ms-Qc2" id="H7R-5p-YrN"/>
+                <outlet property="languagesContainerView" destination="87L-EH-VCl" id="Gzv-qB-oNo"/>
+                <outlet property="tableView" destination="ymX-Kf-PJ9" id="wZ5-rD-5EK"/>
+                <outlet property="view" destination="sQb-D3-c8p" id="otz-mr-gDE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sQb-D3-c8p">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ymX-Kf-PJ9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="OU5-6i-24K"/>
+                        <outlet property="delegate" destination="-1" id="Zn4-qX-hqX"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ymX-Kf-PJ9" secondAttribute="trailing" id="Mzd-Of-jZp"/>
+                <constraint firstAttribute="bottom" secondItem="ymX-Kf-PJ9" secondAttribute="bottom" id="Yho-oU-OFs"/>
+                <constraint firstItem="ymX-Kf-PJ9" firstAttribute="leading" secondItem="sQb-D3-c8p" secondAttribute="leading" id="jkZ-Zy-UYG"/>
+                <constraint firstItem="ymX-Kf-PJ9" firstAttribute="top" secondItem="sQb-D3-c8p" secondAttribute="top" id="xgs-Ap-Bqm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="cXv-2Z-4lg"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="gSe-SM-EZp" appends="YES" id="kRe-K2-t5f"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="154.27286356821591"/>
+        </view>
+        <tapGestureRecognizer id="gSe-SM-EZp">
+            <connections>
+                <action selector="didHandleTap:" destination="-1" id="hwZ-QD-TGH"/>
+                <outlet property="delegate" destination="-1" id="cfO-Vx-nyo"/>
+            </connections>
+        </tapGestureRecognizer>
+        <view contentMode="scaleToFill" id="87L-EH-VCl">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fA-tg-lmh">
+                    <rect key="frame" x="0.0" y="97" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDg-Y3-Sal">
+                            <rect key="frame" x="139.5" y="16" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="n69-b1-Lwh"/>
+                                <constraint firstAttribute="width" constant="32" id="olV-lI-Hqj"/>
+                            </constraints>
+                            <state key="normal" image="flag_rus"/>
+                            <connections>
+                                <action selector="didPressFlag:" destination="-1" eventType="touchUpInside" id="QC7-Kv-4r3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhl-Ms-Qc2">
+                            <rect key="frame" x="203.5" y="16" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="80o-27-vtC"/>
+                                <constraint firstAttribute="height" constant="32" id="e4i-Su-TL3"/>
+                            </constraints>
+                            <state key="normal" image="flag_usa"/>
+                            <connections>
+                                <action selector="didPressFlag:" destination="-1" eventType="touchUpInside" id="KLN-b0-NJI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="nDg-Y3-Sal" secondAttribute="trailing" constant="16" id="IK7-9k-W4l"/>
+                        <constraint firstItem="nDg-Y3-Sal" firstAttribute="centerY" secondItem="8fA-tg-lmh" secondAttribute="centerY" id="Kit-33-E1q"/>
+                        <constraint firstAttribute="height" constant="64" id="bSL-sA-UmJ"/>
+                        <constraint firstItem="hhl-Ms-Qc2" firstAttribute="centerY" secondItem="8fA-tg-lmh" secondAttribute="centerY" id="wdE-wz-tRT"/>
+                        <constraint firstItem="hhl-Ms-Qc2" firstAttribute="leading" secondItem="8fA-tg-lmh" secondAttribute="centerX" constant="16" id="x5w-Wm-nNC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="swT-Xu-kOY" firstAttribute="bottom" secondItem="8fA-tg-lmh" secondAttribute="bottom" id="FYe-Hj-aF8"/>
+                <constraint firstItem="8fA-tg-lmh" firstAttribute="leading" secondItem="87L-EH-VCl" secondAttribute="leading" id="kP4-qc-tRL"/>
+                <constraint firstItem="8fA-tg-lmh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="swT-Xu-kOY" secondAttribute="top" constant="12" id="p5Q-ev-uVw"/>
+                <constraint firstItem="swT-Xu-kOY" firstAttribute="trailing" secondItem="8fA-tg-lmh" secondAttribute="trailing" id="vKm-9s-eVg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="swT-Xu-kOY"/>
+            <point key="canvasLocation" x="-748" y="160.56971514242881"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="flag_rus" width="22" height="22"/>
+        <image name="flag_usa" width="22" height="22"/>
+    </resources>
+</document>

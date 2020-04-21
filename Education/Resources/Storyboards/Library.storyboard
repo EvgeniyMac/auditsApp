@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S6X-IA-R3l">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Библиотека-->
+        <scene sceneID="cAr-d7-keu">
+            <objects>
+                <viewController id="Ney-fZ-lsf" customClass="LibraryViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Библиотека" image="tab.library.deselected" selectedImage="tab.library.selected" id="PDp-6O-0KH">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="dgx-yu-q9Q"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="hdb-X6-lVi" kind="show" identifier="toProfile" id="nV0-kV-j5d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWH-ey-aDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="108"/>
+        </scene>
+        <!--Tab Navigation Controller-->
+        <scene sceneID="UVy-Ds-x2X">
+            <objects>
+                <navigationController id="S6X-IA-R3l" customClass="TabNavigationController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ywv-vG-heR" customClass="CustomNavigationBar" customModule="_skills" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ney-fZ-lsf" kind="relationship" relationship="rootViewController" id="vRT-o5-vYQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5OR-bD-MWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-659" y="108"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="VWL-8e-Feg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="hdb-X6-lVi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FWY-wE-Kjk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoC-Mn-XLT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="646"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab.library.deselected" width="34" height="34"/>
+        <image name="tab.library.selected" width="34" height="34"/>
+    </resources>
+</document>

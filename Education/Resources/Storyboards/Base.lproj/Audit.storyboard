@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vfe-bq-AGb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Navigation Controller-->
+        <scene sceneID="ThK-b8-Jh2">
+            <objects>
+                <navigationController id="Vfe-bq-AGb" customClass="TabNavigationController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TKl-68-Py6" customClass="CustomNavigationBar" customModule="_skills" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fiz-D9-NGy" kind="relationship" relationship="rootViewController" id="AoN-Bw-JHi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlQ-OF-M2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-620" y="79"/>
+        </scene>
+        <!--Проверки-->
+        <scene sceneID="Jft-52-gBw">
+            <objects>
+                <viewController id="fiz-D9-NGy" customClass="AuditsListViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Проверки" image="tab.audit.deselected" selectedImage="tab.audit.selected" id="7Wp-ZR-Lxx">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="1uB-qz-8A6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="h03-RM-txT" kind="show" identifier="toProfile" id="eGd-lD-N9l"/>
+                        <segue destination="mme-lL-ujg" kind="show" identifier="toAuditItemViewController" id="UvF-DD-yCh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DGk-Wr-ybj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="78"/>
+        </scene>
+        <!--Audit Details View Controller-->
+        <scene sceneID="gEG-xL-TEE">
+            <objects>
+                <viewController id="mme-lL-ujg" customClass="AuditDetailsViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zo0-Ai-8JW"/>
+                    <connections>
+                        <segue destination="F7n-bu-V14" kind="show" identifier="toAuditQuestionViewController" id="2ca-bC-tjD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Xx-dS-Ddd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="78"/>
+        </scene>
+        <!--Audit Question View Controller-->
+        <scene sceneID="hDy-9V-HTW">
+            <objects>
+                <viewController id="F7n-bu-V14" customClass="AuditQuestionViewController" customModule="_skills" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="neZ-Tc-XaW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I8T-dU-k4z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2539" y="78"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="vp2-pX-Ltd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="h03-RM-txT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="q6O-Gi-Oms"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7OV-gi-Ana" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="630"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab.audit.deselected" width="34" height="34"/>
+        <image name="tab.audit.selected" width="34" height="34"/>
+    </resources>
+</document>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CodeConfirmViewController" customModule="Education" customModuleProvider="target">
+            <connections>
+                <outlet property="flagButtonRus" destination="4vG-HY-pzk" id="3VD-no-vW2"/>
+                <outlet property="flagButtonUsa" destination="1t8-gr-46r" id="lSM-Gz-Lum"/>
+                <outlet property="languagesContainerView" destination="xQz-FP-LHi" id="8XO-HC-8Si"/>
+                <outlet property="tableView" destination="dfM-XI-r0I" id="jhA-i1-CBV"/>
+                <outlet property="view" destination="GeL-pb-CRP" id="5P2-fR-UNe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GeL-pb-CRP">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="dfM-XI-r0I">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3ip-gg-CCg"/>
+                        <outlet property="delegate" destination="-1" id="HCt-YK-45D"/>
+                        <outletCollection property="gestureRecognizers" destination="fuO-ta-XaT" appends="YES" id="CDF-97-qmc"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dfM-XI-r0I" firstAttribute="leading" secondItem="GeL-pb-CRP" secondAttribute="leading" id="5yY-xI-FFM"/>
+                <constraint firstItem="dfM-XI-r0I" firstAttribute="top" secondItem="GeL-pb-CRP" secondAttribute="top" id="DoW-eR-eLB"/>
+                <constraint firstAttribute="trailing" secondItem="dfM-XI-r0I" secondAttribute="trailing" id="SP3-GU-xOJ"/>
+                <constraint firstAttribute="bottom" secondItem="dfM-XI-r0I" secondAttribute="bottom" id="qmG-xg-OhC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="UAT-EF-SSs"/>
+            <point key="canvasLocation" x="116" y="133.5832083958021"/>
+        </view>
+        <tapGestureRecognizer id="fuO-ta-XaT">
+            <connections>
+                <outlet property="delegate" destination="-1" id="gtr-hg-r5h"/>
+            </connections>
+        </tapGestureRecognizer>
+        <view contentMode="scaleToFill" id="xQz-FP-LHi">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpP-mW-zTM">
+                    <rect key="frame" x="0.0" y="146" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vG-HY-pzk">
+                            <rect key="frame" x="139.5" y="16" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="7xZ-It-bDv"/>
+                                <constraint firstAttribute="height" constant="32" id="dva-Yg-V7W"/>
+                            </constraints>
+                            <state key="normal" image="flag_rus"/>
+                            <connections>
+                                <action selector="didPressFlag:" destination="-1" eventType="touchUpInside" id="K8q-uk-YJV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1t8-gr-46r">
+                            <rect key="frame" x="203.5" y="16" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="kZw-P9-fch"/>
+                                <constraint firstAttribute="width" constant="32" id="tC2-9U-6uI"/>
+                            </constraints>
+                            <state key="normal" image="flag_usa"/>
+                            <connections>
+                                <action selector="didPressFlag:" destination="-1" eventType="touchUpInside" id="Mks-Mw-iyv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4vG-HY-pzk" firstAttribute="centerY" secondItem="YpP-mW-zTM" secondAttribute="centerY" id="Dn5-wq-mXN"/>
+                        <constraint firstItem="1t8-gr-46r" firstAttribute="leading" secondItem="YpP-mW-zTM" secondAttribute="centerX" constant="16" id="kXv-aS-EeR"/>
+                        <constraint firstAttribute="centerX" secondItem="4vG-HY-pzk" secondAttribute="trailing" constant="16" id="kqR-MA-3ML"/>
+                        <constraint firstAttribute="height" constant="64" id="lcf-pZ-neY"/>
+                        <constraint firstItem="1t8-gr-46r" firstAttribute="centerY" secondItem="YpP-mW-zTM" secondAttribute="centerY" id="r43-FT-46V"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YpP-mW-zTM" firstAttribute="trailing" secondItem="3XN-Qc-JVK" secondAttribute="trailing" id="Kna-CB-XbW"/>
+                <constraint firstItem="3XN-Qc-JVK" firstAttribute="bottom" secondItem="YpP-mW-zTM" secondAttribute="bottom" id="QIp-RE-fNP"/>
+                <constraint firstItem="YpP-mW-zTM" firstAttribute="leading" secondItem="3XN-Qc-JVK" secondAttribute="leading" id="b1e-2i-7AH"/>
+                <constraint firstItem="YpP-mW-zTM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3XN-Qc-JVK" secondAttribute="top" constant="12" id="bWV-2u-28K"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="3XN-Qc-JVK"/>
+            <point key="canvasLocation" x="-631.20000000000005" y="399.40029985007499"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="flag_rus" width="22" height="22"/>
+        <image name="flag_usa" width="22" height="22"/>
+    </resources>
+</document>

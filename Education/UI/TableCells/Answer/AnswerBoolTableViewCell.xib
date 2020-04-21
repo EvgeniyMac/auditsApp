@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="09b-Cm-qxD" customClass="AnswerBoolTableViewCell" customModule="Education" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="09b-Cm-qxD" id="KpZ-3M-Te7">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLw-4c-kld" customClass="CustomButton" customModule="Education" customModuleProvider="target">
+                        <rect key="frame" x="45" y="17.5" width="132.5" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="didPressTrueButton:" destination="09b-Cm-qxD" eventType="touchUpInside" id="AWL-ap-k6W"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3z-Hx-x8c" customClass="CustomButton" customModule="Education" customModuleProvider="target">
+                        <rect key="frame" x="197.5" y="17.5" width="132.5" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="didPressFalseButton:" destination="09b-Cm-qxD" eventType="touchUpInside" id="mjC-rH-37C"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="m3z-Hx-x8c" firstAttribute="leading" secondItem="FLw-4c-kld" secondAttribute="trailing" constant="20" id="2Hy-E4-3hM"/>
+                    <constraint firstItem="FLw-4c-kld" firstAttribute="leading" secondItem="KpZ-3M-Te7" secondAttribute="leading" constant="45" id="9by-La-Jnl"/>
+                    <constraint firstItem="m3z-Hx-x8c" firstAttribute="width" secondItem="FLw-4c-kld" secondAttribute="width" id="EE6-nf-aSg"/>
+                    <constraint firstItem="FLw-4c-kld" firstAttribute="centerY" secondItem="KpZ-3M-Te7" secondAttribute="centerY" id="lHN-aC-bpQ"/>
+                    <constraint firstAttribute="trailing" secondItem="m3z-Hx-x8c" secondAttribute="trailing" constant="45" id="nXr-k6-Avf"/>
+                    <constraint firstItem="m3z-Hx-x8c" firstAttribute="centerY" secondItem="KpZ-3M-Te7" secondAttribute="centerY" id="xv2-md-Nsk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="falseButton" destination="m3z-Hx-x8c" id="lqT-PB-9Sc"/>
+                <outlet property="trueButton" destination="FLw-4c-kld" id="2VP-ZX-A8b"/>
+            </connections>
+            <point key="canvasLocation" x="136.80000000000001" y="103.89805097451276"/>
+        </tableViewCell>
+    </objects>
+</document>

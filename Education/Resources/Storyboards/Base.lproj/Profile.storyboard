@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oIp-VM-zdB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="JmQ-MV-cWc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SX7-2q-Ibn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="oIp-VM-zdB" customClass="ProfileViewController" customModule="Education" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="zj9-08-jaw" kind="show" identifier="toLanguagesViewController" id="wT4-wH-Bgx"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="668" y="-98"/>
+        </scene>
+        <!--Languages View Controller-->
+        <scene sceneID="jAV-GR-CFI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1LT-SK-Ac2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="zj9-08-jaw" customClass="LanguagesViewController" customModule="Education" customModuleProvider="target" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="-99"/>
+        </scene>
+    </scenes>
+</document>
