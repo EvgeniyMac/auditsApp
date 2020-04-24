@@ -38,7 +38,7 @@ class AuditOptionsTableViewCell: UITableViewCell {
             layout.estimatedItemSize = cellSize
             layout.minimumInteritemSpacing = tagsInteritemSpacing
             layout.minimumLineSpacing = tagsLineSpacing
-            layout.minimumInteritemSpacing = 10
+            layout.minimumInteritemSpacing = 11
             layout.sectionInset = UIEdgeInsets(all: 20)
         }
 
@@ -106,7 +106,7 @@ extension AuditOptionsTableViewCell: UICollectionViewDataSource, UICollectionVie
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: TextCollectionViewCell = collectionView.dequeCell(at: indexPath)
 
-        // Evgeniy 3 (yes, no button)
+        // Evgeniy 3 (yes, no button parameters)
         let tagItem = self.options[indexPath.row]
         cell.textLabel.text = tagItem.answer
         cell.textLabel.font = AppStyle.Font.regular(14)
@@ -115,7 +115,7 @@ extension AuditOptionsTableViewCell: UICollectionViewDataSource, UICollectionVie
 
         cell.container.layer.cornerRadius = AppStyle.CornerRadius.tag
         cell.container.layer.masksToBounds = true
-
+        
         var shouldSelect = false
         if let answerId = self.userAnswer?.answer {
             shouldSelect = (answerId == tagItem.identifier)
@@ -154,6 +154,7 @@ extension AuditOptionsTableViewCell: UICollectionViewDataSource, UICollectionVie
     }
 
     private func setup(tagCell: TextCollectionViewCell?, asSelected: Bool) {
+        
         if asSelected {
             tagCell?.container.backgroundColor = AppStyle.Color.custom(hex: 0xDAF7D6)
             tagCell?.container.layer.borderColor = AppStyle.Color.green.cgColor

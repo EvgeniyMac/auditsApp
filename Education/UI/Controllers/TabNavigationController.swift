@@ -41,7 +41,7 @@ class TabNavigationController: UINavigationController {
     // MARK: - Private
     private func configureUI() {
         self.navigationBar.shadowImage = UIImage()
-        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: AppStyle.Font.medium(16)]
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: AppStyle.Font.medium(22)]
 
         let bgColor = AppStyle.Color.navigationBarBackground
         self.navigationBar.barTintColor = bgColor

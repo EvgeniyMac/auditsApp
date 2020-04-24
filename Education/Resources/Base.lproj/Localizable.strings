@@ -124,7 +124,7 @@
 "question.answer_correct" = "Correct answer";
 "question.answer_incorrect" = "Incorrect answer";
 "question.answer_yes" = "Yes";
-"question.answer_no" = "No";
+"question.answer_no" = " No";
 "question.passed" = "Passed";
 "question.question_title" = "Question";
 "question.text_input.placeholder" = "Your answer";

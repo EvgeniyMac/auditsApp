@@ -25,7 +25,8 @@ class AuditTilesTableViewCell: UITableViewCell {
 
         self.backgroundColor = AppStyle.Color.custom(hex: 0xEEEEEE)
         self.contentView.backgroundColor = AppStyle.Color.custom(hex: 0xEEEEEE)
-
+        self.collectionView.backgroundColor = AppStyle.Color.custom(hex: 0xEEEEEE)
+                
         [ImageCollectionViewCell.viewReuseIdentifier(),
          AddMediaCollectionViewCell.viewReuseIdentifier()].forEach { (cellId) in
          let nib = UINib(nibName: cellId, bundle: nil)
@@ -101,6 +102,11 @@ extension AuditTilesTableViewCell: UICollectionViewDelegateFlowLayout, UICollect
             let cell = collectionView.dequeCell(at: indexPath) as AddMediaCollectionViewCell
             cell.setupAsPhoto()
             cell.infoLabel.text = String(self.photosToSend)
+//            if photosToSend > 0 {
+//                // Evgeniy 4 (chanche foto and video background color)
+//                self.collectionView.backgroundColor = AppStyle.Color.custom(hex: 0xEEEEEE)
+//                self.collectionView.isHidden = false
+//            }
             print(self.photosToSend)
             return cell
         case 2:
@@ -135,7 +141,7 @@ extension AuditTilesTableViewCell: UICollectionViewDelegateFlowLayout, UICollect
         case 0:
             return CGSize(width: 64, height: 64)
         case 1,2:
-            return CGSize(width: 54, height: 64)
+            return CGSize(width: 54, height: 54)
         default:
             return CGSize.zero
         }
@@ -144,9 +150,9 @@ extension AuditTilesTableViewCell: UICollectionViewDelegateFlowLayout, UICollect
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         switch section {
         case 0:
-            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
+            return UIEdgeInsets(top: 0, left: 13, bottom: 0, right: 0)
         case 1,2:
-            return UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 0)
+            return UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 0)
         default:
             return UIEdgeInsets.zero
         }

@@ -19,13 +19,13 @@ class AddMediaCollectionViewCell: UICollectionViewCell {
         self.backgroundColor = UIColor.clear
         self.mediaImageView.contentMode = .scaleAspectFit
 
-        self.infoLabel.font = AppStyle.Font.regular(10)
-        self.infoLabel.textColor = AppStyle.Color.textMainBrightened
+        self.infoLabel.font = AppStyle.Font.regular(14)
+        self.infoLabel.textColor = AppStyle.Color.tintUnselected
         self.infoLabel.text = nil
     }
 
     func setupAsPhoto() {
-        self.mediaImageView.image = UIImage(named: "photo_icon")
+        self.mediaImageView.image = UIImage(named: "photo_icon2")
     }
 
     func setupAsVideo() {

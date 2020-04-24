@@ -205,9 +205,9 @@ extension AuditImagePreviewTableViewCell: UICollectionViewDelegateFlowLayout, UI
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         switch section {
         case 0:
-            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
+            return UIEdgeInsets(top: 0, left: 20, bottom: 20, right: 0)
         case 1, 2:
-            return UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 0)
+            return UIEdgeInsets(top: 0, left: 4, bottom: 20, right: 0)
         default:
             return UIEdgeInsets.zero
         }

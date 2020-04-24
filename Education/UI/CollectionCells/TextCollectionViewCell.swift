@@ -41,11 +41,10 @@ class TextCollectionViewCell: UICollectionViewCell {
         self.contentView.backgroundColor = UIColor.clear
 
         self.container.layer.cornerRadius = AppStyle.CornerRadius.textCell
-        self.container.backgroundColor = .red
         self.container.layer.masksToBounds = true
 
         self.textLabel.textColor = AppStyle.Color.darkGray
-        self.textLabel.font = AppStyle.Font.medium(16)
+        self.textLabel.font = AppStyle.Font.medium(14)
         self.textLabel.numberOfLines = 0
         self.textLabel.preferredMaxLayoutWidth = 130
     }
@@ -64,7 +63,12 @@ class TextCollectionViewCell: UICollectionViewCell {
         let verticalFitting = fittingPriority(shouldFit: fitToTextVertically)
 
         // Calculate the size (height) using Auto Layout
-        let autoLayoutSize = contentView.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: horizontalFitting, verticalFittingPriority: verticalFitting)
+        var autoLayoutSize = contentView.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: horizontalFitting, verticalFittingPriority: verticalFitting)
+        
+        // Evgeniy5 we set button size 54
+        if autoLayoutSize.width < 50.0 {
+            autoLayoutSize.width = 54.0
+        }
         let autoLayoutFrame = CGRect(origin: autoLayoutAttributes.frame.origin, size: autoLayoutSize)
 
         // Assign the new size to the layout attributes
