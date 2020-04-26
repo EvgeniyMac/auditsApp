@@ -17,7 +17,7 @@ class AuditTilesTableViewCell: UITableViewCell {
 
     private var shouldShowAddPhotos: Bool = false
     private var shouldShowAddVideos: Bool = false
-    private var urls = [URL]()
+    private var urls = [URL(string: "https://media.dev.7skills.com/files/5e7a0d1773a6124db9077648"), URL(string: "https://media.dev.7skills.com/files/5e7a0d1773a6124db9077648"), URL(string: "https://media.dev.7skills.com/files/5e7a0d1773a6124db9077648")]
     private var photosToSend: Int = 0
 
     override func awakeFromNib() {
@@ -39,7 +39,7 @@ class AuditTilesTableViewCell: UITableViewCell {
     }
 
     func setup(with urls: [URL], auditQuestion: AuditQuestion) {
-        self.urls.removeAll()
+  //      self.urls.removeAll()
         self.urls.append(contentsOf: urls)
         setup(with: auditQuestion)
     }
@@ -95,18 +95,16 @@ extension AuditTilesTableViewCell: UICollectionViewDelegateFlowLayout, UICollect
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeCell(at: indexPath) as ImageCollectionViewCell
-            let url = self.urls[indexPath.row]
+            guard let url = self.urls[indexPath.row] else { return UICollectionViewCell() }
+//            let stringUrl = "https://media.dev.7skills.com/files/5e7a0d1773a6124db9077648"
+//            guard let urlString = URL(string: stringUrl) else { return UICollectionViewCell() }
             cell.imageView.setImage(withUrl: url, placeholder: nil)
             return cell
         case 1:
             let cell = collectionView.dequeCell(at: indexPath) as AddMediaCollectionViewCell
             cell.setupAsPhoto()
             cell.infoLabel.text = String(self.photosToSend)
-//            if photosToSend > 0 {
-//                // Evgeniy 4 (chanche foto and video background color)
-//                self.collectionView.backgroundColor = AppStyle.Color.custom(hex: 0xEEEEEE)
-//                self.collectionView.isHidden = false
-//            }
+
             print(self.photosToSend)
             return cell
         case 2:
@@ -139,7 +137,7 @@ extension AuditTilesTableViewCell: UICollectionViewDelegateFlowLayout, UICollect
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch indexPath.section {
         case 0:
-            return CGSize(width: 64, height: 64)
+            return CGSize(width: 55, height: 64)
         case 1,2:
             return CGSize(width: 54, height: 54)
         default:
@@ -150,9 +148,9 @@ extension AuditTilesTableViewCell: UICollectionViewDelegateFlowLayout, UICollect
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         switch section {
         case 0:
-            return UIEdgeInsets(top: 0, left: 13, bottom: 0, right: 0)
+            return UIEdgeInsets(top: 0, left: 19, bottom: 19, right: 0)
         case 1,2:
-            return UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 0)
+            return UIEdgeInsets(top: 0, left: 6, bottom: 10, right: 0)
         default:
             return UIEdgeInsets.zero
         }

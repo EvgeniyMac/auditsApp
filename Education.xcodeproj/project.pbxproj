@@ -305,7 +305,7 @@
 		2C8ECDD3229F13E800B33228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C392DB8223C11FF00D735E0 /* AppDelegate.swift */; };
 		2C8ECDD4229F13E800B33228 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA590FB22553B3E003C9D62 /* ProfileViewController.swift */; };
 		2C8ECDD5229F13E800B33228 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C052FF92272425100F96464 /* BorderedButton.swift */; };
-		2C8ECDD6229F13E800B33228 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		2C8ECDD6229F13E800B33228 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		2C8ECDD8229F13E800B33228 /* DateSinceNowTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99B742223E1F6500C13BC2 /* DateSinceNowTransform.swift */; };
 		2C8ECDD9229F13E800B33228 /* UIAlertAction+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BC22E2257DEB80002B406 /* UIAlertAction+Additions.swift */; };
 		2C8ECDDA229F13E800B33228 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBFB57D2254C177001250D6 /* MarkerView.swift */; };
@@ -339,7 +339,7 @@
 		2C8ECDF7229F13E800B33228 /* QuestionStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C052FF722722D9C00F96464 /* QuestionStyleManager.swift */; };
 		2C8ECDF8229F13E800B33228 /* QuestionInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F1114226C8F470011F870 /* QuestionInitializer.swift */; };
 		2C8ECDF9229F13E800B33228 /* UICollectionReusableView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C385942223E815E001EB38C /* UICollectionReusableView+Additions.swift */; };
-		2C8ECDFA229F13E800B33228 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		2C8ECDFA229F13E800B33228 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		2C8ECDFB229F13E800B33228 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77E4D0223D6DC3000C345F /* AuthService.swift */; };
 		2C8ECDFC229F13E800B33228 /* AuthNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C16A2162247E1B200B7D918 /* AuthNavigationController.swift */; };
 		2C8ECDFD229F13E800B33228 /* ResultInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C606045226CF3E600C0E15F /* ResultInitializer.swift */; };
@@ -379,7 +379,7 @@
 		2C8ECE22229F13E800B33228 /* QuestionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0F1112226C8F0B0011F870 /* QuestionConfigurator.swift */; };
 		2C8ECE23229F13E800B33228 /* CoursesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB99080224024EA004B6E00 /* CoursesService.swift */; };
 		2C8ECE24229F13E800B33228 /* SegmentedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE2094822465172008D1B21 /* SegmentedHeaderView.swift */; };
-		2C8ECE25229F13E800B33228 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		2C8ECE25229F13E800B33228 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		2C8ECE26229F13E800B33228 /* AnswerImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD15828226A0EE300A5F539 /* AnswerImageTableViewCell.swift */; };
 		2C8ECE27229F13E800B33228 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9908222402683004B6E00 /* Course.swift */; };
 		2C8ECE28229F13E800B33228 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAEA47223C1B91006755E6 /* Constants.swift */; };
@@ -403,7 +403,7 @@
 		2C8ECE3A229F13E800B33228 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77E4CD223D6CDD000C345F /* AuthData.swift */; };
 		2C8ECE3B229F13E800B33228 /* ResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C606047226CF3F300C0E15F /* ResultPresenter.swift */; };
 		2C8ECE3C229F13E800B33228 /* UIDevice+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C16A2212248037C00B7D918 /* UIDevice+Additions.swift */; };
-		2C8ECE3D229F13E800B33228 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		2C8ECE3D229F13E800B33228 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		2C8ECE3E229F13E800B33228 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF4DE22257C02200E8ACA8 /* UsersService.swift */; };
 		2C8ECE3F229F13E800B33228 /* MarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBD3592249642100F36E88 /* MarginLabel.swift */; };
 		2C8ECE40229F13E800B33228 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1F48822451865005B6B13 /* Utilities.swift */; };
@@ -421,7 +421,7 @@
 		2C8ECE50229F13E800B33228 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA590FD22553B57003C9D62 /* ProfileViewController.xib */; };
 		2C8ECE51229F13E800B33228 /* AnswerOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E84A4224E9DEE00194DFB /* AnswerOptionTableViewCell.xib */; };
 		2C8ECE52229F13E800B33228 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC18360224F68FB00697722 /* ImageTableViewCell.xib */; };
-		2C8ECE54229F13E800B33228 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		2C8ECE54229F13E800B33228 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		2C8ECE55229F13E800B33228 /* MaterialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C16A2122247C95E00B7D918 /* MaterialViewController.xib */; };
 		2C8ECE56229F13E800B33228 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1BC2322257ED640002B406 /* Profile.storyboard */; };
 		2C8ECE57229F13E800B33228 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6166E8225B919D00754227 /* ResultViewController.xib */; };
@@ -429,7 +429,7 @@
 		2C8ECE59229F13E800B33228 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C77E4DE223D74D6000C345F /* Auth.storyboard */; };
 		2C8ECE5B229F13E800B33228 /* CodeRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C385930223E5D11001EB38C /* CodeRequestViewController.xib */; };
 		2C8ECE5C229F13E800B33228 /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCBD357224962F100F36E88 /* TextTableViewCell.xib */; };
-		2C8ECE5E229F13E800B33228 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		2C8ECE5E229F13E800B33228 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		2C8ECE5F229F13E800B33228 /* InactiveCourseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBFB5812254D259001250D6 /* InactiveCourseTableViewCell.xib */; };
 		2C8ECE60229F13E800B33228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCAEA41223C1B11006755E6 /* Main.storyboard */; };
 		2C8ECE61229F13E800B33228 /* ResultQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C96DCE7225E5DC40080DC90 /* ResultQuestionTableViewCell.xib */; };
@@ -440,7 +440,7 @@
 		2C8ECE67229F13E800B33228 /* AnswerResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C23A634225CA65300F8FD39 /* AnswerResultTableViewCell.xib */; };
 		2C8ECE68229F13E800B33228 /* AnswerTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E8498224E905600194DFB /* AnswerTextTableViewCell.xib */; };
 		2C8ECE69229F13E800B33228 /* AnswerImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD1582A226A0EFC00A5F539 /* AnswerImageTableViewCell.xib */; };
-		2C8ECE6A229F13E800B33228 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		2C8ECE6A229F13E800B33228 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		2C8ECE6B229F13E800B33228 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C140F59225689D8007BDAD6 /* ProfileTableViewCell.xib */; };
 		2C8ECE6C229F13E800B33228 /* CourseInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE2094F22468B26008D1B21 /* CourseInfoViewController.xib */; };
 		2C8ECE6F229F13E800B33228 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C510E2A2265A49400913CC5 /* InfoPlist.strings */; };
@@ -1114,7 +1114,6 @@
 				14F1157D0A9F3FBE1FAFB365 /* Pods-Education-Prod.debug.xcconfig */,
 				6EBB6437EB20F1671F973CA7 /* Pods-Education-Prod.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -2346,7 +2345,7 @@
 				2C8ECE52229F13E800B33228 /* ImageTableViewCell.xib in Resources */,
 				2CA2155B234D042D00CAEC23 /* SF-Pro-Display-Bold.otf in Resources */,
 				2C1E722623B4D54600B50E00 /* HelpChatViewController.xib in Resources */,
-				2C8ECE54229F13E800B33228 /* BuildFile in Resources */,
+				2C8ECE54229F13E800B33228 /* (null) in Resources */,
 				2C70D5FA23A40B540011FCB2 /* DoubleButtonTableViewCell.xib in Resources */,
 				2C06DD852344A23E00E86B59 /* CourseInfoTableViewCell.xib in Resources */,
 				2C8ECE55229F13E800B33228 /* MaterialViewController.xib in Resources */,
@@ -2369,7 +2368,7 @@
 				2C9E01C8240ADE3100212C90 /* AuditQuestionViewController.xib in Resources */,
 				2C362FF223FF0F1900A21072 /* AuditInputTableViewCell.xib in Resources */,
 				2C5FD18523B29C73007AB60E /* CommunicationViewController.xib in Resources */,
-				2C8ECE5E229F13E800B33228 /* BuildFile in Resources */,
+				2C8ECE5E229F13E800B33228 /* (null) in Resources */,
 				2C8ECE5F229F13E800B33228 /* InactiveCourseTableViewCell.xib in Resources */,
 				2C283AB523AE61C0006F9012 /* NewsItemQuarterTableViewCell.xib in Resources */,
 				2C8ECE60229F13E800B33228 /* Main.storyboard in Resources */,
@@ -2389,7 +2388,7 @@
 				2CD067A923E844CA004AD684 /* LibraryViewController.xib in Resources */,
 				2CA91FAB23AE1685004C4266 /* NewsItemFullTableViewCell.xib in Resources */,
 				2C8ECE69229F13E800B33228 /* AnswerImageTableViewCell.xib in Resources */,
-				2C8ECE6A229F13E800B33228 /* BuildFile in Resources */,
+				2C8ECE6A229F13E800B33228 /* (null) in Resources */,
 				2C3C13B723FD20320065D4A8 /* AuditsListViewController.xib in Resources */,
 				2C8ECE6B229F13E800B33228 /* ProfileTableViewCell.xib in Resources */,
 				2C8ECE6C229F13E800B33228 /* CourseInfoViewController.xib in Resources */,
@@ -2817,7 +2816,7 @@
 				2C8ECDD3229F13E800B33228 /* AppDelegate.swift in Sources */,
 				2C8ECDD4229F13E800B33228 /* ProfileViewController.swift in Sources */,
 				2C8ECDD5229F13E800B33228 /* BorderedButton.swift in Sources */,
-				2C8ECDD6229F13E800B33228 /* BuildFile in Sources */,
+				2C8ECDD6229F13E800B33228 /* (null) in Sources */,
 				2C8ECDD8229F13E800B33228 /* DateSinceNowTransform.swift in Sources */,
 				2C8ECDD9229F13E800B33228 /* UIAlertAction+Additions.swift in Sources */,
 				2CE289BC23435A11000E10AE /* EducationViewController.swift in Sources */,
@@ -2892,7 +2891,7 @@
 				2C8ECDF8229F13E800B33228 /* QuestionInitializer.swift in Sources */,
 				2C3C13C723FD74980065D4A8 /* AuditQuestion.swift in Sources */,
 				2C8ECDF9229F13E800B33228 /* UICollectionReusableView+Additions.swift in Sources */,
-				2C8ECDFA229F13E800B33228 /* BuildFile in Sources */,
+				2C8ECDFA229F13E800B33228 /* (null) in Sources */,
 				2C8ECDFB229F13E800B33228 /* AuthService.swift in Sources */,
 				2CFC5B98237355AE007E2E3D /* CustomNavigationBar.swift in Sources */,
 				2C8ECDFC229F13E800B33228 /* AuthNavigationController.swift in Sources */,
@@ -2977,7 +2976,7 @@
 				2CA21562234D10F300CAEC23 /* CourseStyle.swift in Sources */,
 				2CD00A992410D81B00C61970 /* FilesService.swift in Sources */,
 				2C8ECE24229F13E800B33228 /* SegmentedHeaderView.swift in Sources */,
-				2C8ECE25229F13E800B33228 /* BuildFile in Sources */,
+				2C8ECE25229F13E800B33228 /* (null) in Sources */,
 				2C8ECE26229F13E800B33228 /* AnswerImageTableViewCell.swift in Sources */,
 				2C1E722023B4A14B00B50E00 /* HelpChatViewController.swift in Sources */,
 				2C8ECE27229F13E800B33228 /* Course.swift in Sources */,
@@ -3017,7 +3016,7 @@
 				2C8ECE3B229F13E800B33228 /* ResultPresenter.swift in Sources */,
 				2C8ECE3C229F13E800B33228 /* UIDevice+Additions.swift in Sources */,
 				2CED3F9623FE8E33001097DA /* AuditMediaTableViewCell.swift in Sources */,
-				2C8ECE3D229F13E800B33228 /* BuildFile in Sources */,
+				2C8ECE3D229F13E800B33228 /* (null) in Sources */,
 				2C332D3B240171B50053E0EF /* AuditImageTableViewCell.swift in Sources */,
 				2CDED7682353C19E00C3ED0C /* RewardView.swift in Sources */,
 				2C8ECE3E229F13E800B33228 /* UsersService.swift in Sources */,
@@ -3274,9 +3273,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Education/Education.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = VKNT3Z3EBT;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Education/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3285,7 +3284,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.edu.client;
 				PRODUCT_NAME = 7skills;
-				PROVISIONING_PROFILE_SPECIFIER = Education;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -3297,9 +3296,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Education/Education.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = VKNT3Z3EBT;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Education/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3308,7 +3307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.edu.client;
 				PRODUCT_NAME = 7skills;
-				PROVISIONING_PROFILE_SPECIFIER = Edu;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

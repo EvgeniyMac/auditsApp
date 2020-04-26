@@ -345,10 +345,10 @@ class AuditDetailsViewController: BaseViewController, KeyboardObserver {
             handler: { [weak self] _ in
                 if let currentValue = self?.viewModel.shouldGroupQuestions {
                     self?.viewModel.shouldGroupQuestions = !currentValue
-                }
-                if let audit = self?.viewModel.audit {
-                    self?.configureWithAudit(audit)
-                }
+                    self?.tableView.reloadData()                }
+                //                if let audit = self?.viewModel.audit {
+//                    self?.configureWithAudit(audit)
+//                }
             })
         groupAction.setValue(self.viewModel.shouldGroupQuestions, forKey: "checked")
         actionSheet.addAction(groupAction)
@@ -360,6 +360,8 @@ class AuditDetailsViewController: BaseViewController, KeyboardObserver {
             handler: { [weak self] _ in
                 if let currentValue = self?.viewModel.shouldHideReceived {
                     self?.viewModel.shouldHideReceived = !currentValue
+                    self?.tableView.beginUpdates()
+                    self?.tableView.endUpdates()
                 }
                 // TODO: update data
             })
@@ -446,8 +448,15 @@ extension AuditDetailsViewController: UITableViewDataSource, UITableViewDelegate
 
     func tableView(_ tableView: UITableView,
                    heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if !self.viewModel.shouldGroupQuestions {
+            if indexPath.row == 0 {
+            return 0
+            }
+        }
         return UITableView.automaticDimension
     }
+    
 
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -500,17 +509,29 @@ extension AuditDetailsViewController: UITableViewDataSource, UITableViewDelegate
         self.sendButton.isEnabled = isAuditCompleted
     }
 
-    private func getQuestionTableViewCell(in tableView: UITableView,
+     func getQuestionTableViewCell(in tableView: UITableView,
                                           at indexPath: IndexPath,
                                           row: AuditUI.Row) -> UITableViewCell {
+        
         switch row {
         case .groupTitle(let text):
-            let cell = tableView.dequeCell(at: indexPath) as TextTableViewCell
-            cell.insets = UIEdgeInsets(all: 20)
-            cell.contentLabel?.text = text
-            cell.contentLabel.font = AppStyle.Font.medium(22)
-            cell.contentLabel.textColor = AppStyle.Color.textSelected.withAlphaComponent(0.87)
-            return cell
+            // Evgeniy 6 (dont show cell if we dont have data section text)
+//            if self.viewModel.shouldGroupQuestions {
+//
+//            }
+            if text != "" {
+                let cell = tableView.dequeCell(at: indexPath) as TextTableViewCell
+                cell.insets = UIEdgeInsets(all: 20)
+                cell.contentLabel?.text = text
+                cell.contentLabel.font = AppStyle.Font.medium(22)
+                cell.contentLabel.textColor = AppStyle.Color.textSelected.withAlphaComponent(0.87)
+                return cell
+            } else {
+                let cell = tableView.dequeCell(at: indexPath) as TextTableViewCell
+                cell.isHidden = true
+                return cell
+            }
+            
         case .title(let question):
             let cell = tableView.dequeCell(at: indexPath) as AuditTitleTableViewCell
             cell.setup(with: question)
@@ -608,7 +629,7 @@ extension AuditDetailsViewController: UITableViewDataSource, UITableViewDelegate
             return cell
         }
     }
-
+    
     private func sendImage(_ image: UIImage?, forQuestionIndex: Int?) {
         let imageMaxSide = Constants.imageUploadMaxSide
         guard let resized = image?.resize(toMaxSide: imageMaxSide),

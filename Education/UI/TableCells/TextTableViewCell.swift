@@ -9,7 +9,7 @@
 import UIKit
 
 class TextTableViewCell: UITableViewCell {
-
+    
     var insets = UIEdgeInsets.zero {
         didSet {
             updateConstraintsWith(edgeInsets: insets)

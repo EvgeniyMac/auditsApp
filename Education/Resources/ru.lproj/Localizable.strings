@@ -186,7 +186,7 @@
 "audit.details.tab.photo" = "Фото";
 "audit.details.tab.result" = "Результат";
 "audit.details.input.placeholder" = "Комментарий";
-"audit.details.option.group" = "Сгруппировать по разделам";
+"audit.details.option.group" = "Сгрупировать по разделам";
 "audit.details.option.hide_received" = "Скрыть принятые";
 "audit.details.action.send" = "Отправить";
 "audit.details.action.accept" = "Принять";
