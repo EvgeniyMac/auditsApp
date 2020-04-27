@@ -72,7 +72,6 @@ class AuditDetailsViewController: BaseViewController, KeyboardObserver {
 
     override func localizeUI() {
         super.localizeUI()
-
         setupSegmentedHeaderView(header: self.segmentedHeader)
         setupHeaderTitle(text: self.viewModel.audit?.name)
 
@@ -436,7 +435,7 @@ extension AuditDetailsViewController: UITableViewDataSource, UITableViewDelegate
         return self.viewModel.sections[section].rows.count
     }
 
-    func tableView(_ tableView: UITableView,
+     func tableView(_ tableView: UITableView,
                    heightForHeaderInSection section: Int) -> CGFloat {
         return CGFloat.leastNormalMagnitude
     }
@@ -448,12 +447,30 @@ extension AuditDetailsViewController: UITableViewDataSource, UITableViewDelegate
 
     func tableView(_ tableView: UITableView,
                    heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        if !self.viewModel.shouldGroupQuestions {
-            if indexPath.row == 0 {
-            return 0
+        let row = self.viewModel.sections[indexPath.section].rows[indexPath.row]
+        switch row {
+        case .groupTitle(let text):
+            if !self.viewModel.shouldGroupQuestions || text.isEmpty {
+                return 0
             }
+        case .title( _):
+            break
+        case .image( _):
+            break
+        case .imagesPreview( _,  _,  _):
+            break
+        case .options( _,  _):
+            break
+        case .media( _,  _,  _):
+            break
+        case .input( _,  _):
+            break
+        case .comment( _):
+            break
+        case .space( _):
+            break
         }
+
         return UITableView.automaticDimension
     }
     
@@ -462,6 +479,8 @@ extension AuditDetailsViewController: UITableViewDataSource, UITableViewDelegate
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // TODO: change here
         let row = self.viewModel.sections[indexPath.section].rows[indexPath.row]
+        print(self.viewModel.sections[indexPath.section].rows)
+   //     print(self.viewModel.sections[indexPath.section])
         let cell = getQuestionTableViewCell(in: tableView, at: indexPath, row: row)
         cell.selectionStyle = .none
 
@@ -471,15 +490,14 @@ extension AuditDetailsViewController: UITableViewDataSource, UITableViewDelegate
 //        if let questions = group?.questions {
 //            cell.setup(with: questions[indexPath.row])
 //        }
-
-        // TYPE 2
+//
+//         TYPE 2
 //        if let allQuestions = self.audit?.groupedQuestions?
 //                .compactMap({ $0.questions })
 //                .flatMap({ $0 }),
 //            allQuestions.count > indexPath.row {
 //                cell.setup(with: allQuestions[indexPath.row])
 //        }
-
 
         return cell
     }
@@ -512,26 +530,15 @@ extension AuditDetailsViewController: UITableViewDataSource, UITableViewDelegate
      func getQuestionTableViewCell(in tableView: UITableView,
                                           at indexPath: IndexPath,
                                           row: AuditUI.Row) -> UITableViewCell {
-        
         switch row {
         case .groupTitle(let text):
             // Evgeniy 6 (dont show cell if we dont have data section text)
-//            if self.viewModel.shouldGroupQuestions {
-//
-//            }
-            if text != "" {
-                let cell = tableView.dequeCell(at: indexPath) as TextTableViewCell
-                cell.insets = UIEdgeInsets(all: 20)
-                cell.contentLabel?.text = text
-                cell.contentLabel.font = AppStyle.Font.medium(22)
-                cell.contentLabel.textColor = AppStyle.Color.textSelected.withAlphaComponent(0.87)
-                return cell
-            } else {
-                let cell = tableView.dequeCell(at: indexPath) as TextTableViewCell
-                cell.isHidden = true
-                return cell
-            }
-            
+            let cell = tableView.dequeCell(at: indexPath) as TextTableViewCell
+            cell.insets = UIEdgeInsets(all: 20)
+            cell.contentLabel?.text = text
+            cell.contentLabel.font = AppStyle.Font.medium(22)
+            cell.contentLabel.textColor = AppStyle.Color.textSelected.withAlphaComponent(0.87)
+            return cell
         case .title(let question):
             let cell = tableView.dequeCell(at: indexPath) as AuditTitleTableViewCell
             cell.setup(with: question)

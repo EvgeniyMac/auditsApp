@@ -17,7 +17,7 @@ class AuditTilesTableViewCell: UITableViewCell {
 
     private var shouldShowAddPhotos: Bool = false
     private var shouldShowAddVideos: Bool = false
-    private var urls = [URL(string: "https://media.dev.7skills.com/files/5e7a0d1773a6124db9077648"), URL(string: "https://media.dev.7skills.com/files/5e7a0d1773a6124db9077648"), URL(string: "https://media.dev.7skills.com/files/5e7a0d1773a6124db9077648")]
+    private var urls = [URL]()
     private var photosToSend: Int = 0
 
     override func awakeFromNib() {
@@ -39,7 +39,7 @@ class AuditTilesTableViewCell: UITableViewCell {
     }
 
     func setup(with urls: [URL], auditQuestion: AuditQuestion) {
-  //      self.urls.removeAll()
+        self.urls.removeAll()
         self.urls.append(contentsOf: urls)
         setup(with: auditQuestion)
     }
@@ -47,6 +47,7 @@ class AuditTilesTableViewCell: UITableViewCell {
 
 extension AuditTilesTableViewCell: AuditQuestionTableViewCellProtocol {
     func setup(with auditQuestion: AuditQuestion) {
+        
         if auditQuestion.userAnswer?.answer == nil {
             self.shouldShowAddVideos = auditQuestion.canSendVideo
 
@@ -95,9 +96,8 @@ extension AuditTilesTableViewCell: UICollectionViewDelegateFlowLayout, UICollect
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeCell(at: indexPath) as ImageCollectionViewCell
-            guard let url = self.urls[indexPath.row] else { return UICollectionViewCell() }
-//            let stringUrl = "https://media.dev.7skills.com/files/5e7a0d1773a6124db9077648"
-//            guard let urlString = URL(string: stringUrl) else { return UICollectionViewCell() }
+            let url = self.urls[indexPath.row]
+            print("My URL - : \(url)")
             cell.imageView.setImage(withUrl: url, placeholder: nil)
             return cell
         case 1:
